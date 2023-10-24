@@ -1,0 +1,152 @@
+@use "../../../global"as g;
+
+.profile {
+    margin-top: 48px;
+
+    &_table {
+        margin-top: 48px;
+    }
+
+
+}
+
+.certification {
+    margin-top: 47px;
+
+    .c_low_ttl02_with_dots {
+        margin-bottom: 42px;
+    }
+}
+
+.omg {
+    display: flex;
+    margin-top: 22px;
+    margin-bottom: 25px;
+
+    .l {
+        width: 777px;
+    }
+
+    .r {
+        width: calc(100% - 777px);
+    }
+}
+
+.privacy_mark {
+    align-items: center;
+}
+
+.privacy_mark,
+.iso_14001 {
+
+    .r {
+        img {
+            width: 160px;
+            max-width: 80%;
+            height: auto;
+
+            display: block;
+            margin-left: auto;
+        }
+    }
+}
+
+.iso_27001 {
+    margin-bottom: 48px;
+
+    .r {
+        img {
+            width: 320px;
+            max-width: 80%;
+            height: auto;
+
+            display: block;
+            margin-left: auto;
+        }
+    }
+}
+
+.iso_27001_none {
+    margin-bottom: 22px;
+}
+
+.iso_14001 {
+    margin-bottom: 10px;
+}
+
+.member {
+    margin-top: 43px;
+
+    .c_low_ttl02 {
+        margin-bottom: 15px;
+    }
+}
+
+@include g.screen_max(1025px) {
+    .profile {
+        margin-top: 40px;
+
+        &_table {
+            margin-top: 40px;
+        }
+    }
+
+    .certification {
+        margin-top: 20px;
+
+        .c_low_ttl02_with_dots {
+            margin-bottom: 20px;
+        }
+    }
+
+    .omg {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .l,
+        .r {
+            width: 100%;
+        }
+    }
+
+    .privacy_mark,
+    .iso_14001 {
+        .r {
+            img {
+                width: 160px;
+                margin-top: 20px;
+                margin-right: auto;
+            }
+        }
+    }
+
+    .iso_27001 {
+        margin-bottom: 20px;
+
+        .r {
+            img {
+                width: 286px;
+                max-width: 100%;
+                margin-top: 20px;
+                margin-right: auto;
+            }
+        }
+    }
+
+    .iso_27001_none {
+        margin-bottom: 20px;
+    }
+
+    .iso_14001 {
+        margin-bottom: 20px;
+    }
+
+    .member {
+        margin-top: 40px;
+
+        .c_low_ttl02 {
+            margin-bottom: 20px;
+        }
+    }
+}

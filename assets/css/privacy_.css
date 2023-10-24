@@ -1,0 +1,263 @@
+/*!
+global > color
+------------------------------
+*/
+/*!
+global > content-width
+------------------------------
+*/
+/*!
+global > font
+------------------------------
+*/
+/*!
+page > privacy
+------------------------------
+*/
+.privacy01 {
+  padding: 12vw 0 6.6666666667vw;
+}
+.privacy01 .c_low_ttl01 {
+  margin-bottom: 5.3333333333vw;
+}
+.privacy01_desc {
+  margin-bottom: 5.3333333333vw;
+}
+.privacy01 .c_list_number {
+  margin-bottom: 2.6666666667vw;
+}
+.privacy01_date {
+  text-align: right;
+  margin-bottom: 2.6666666667vw;
+}
+.privacy01_date li {
+  color: #9BA6AF;
+  display: flex;
+  justify-content: flex-end;
+}
+.privacy01_date .date {
+  display: inline-block;
+}
+.privacy01_date .txt_content {
+  display: inline-block;
+  min-width: 23.4666666667vw;
+}
+.privacy01_date .txt {
+  display: inline-block;
+  margin: 0 4vw 0 0;
+}
+.privacy01_date .txt:last-child {
+  margin: 0;
+}
+.privacy01_date.privacypolicy_date .txt_content {
+  display: inline-block;
+  min-width: 26.6666666667vw;
+}
+.privacy01_info {
+  text-align: right;
+  font-weight: bold;
+  font-size: 4.8vw;
+  line-height: 1.75em;
+}
+
+.privacy02 {
+  padding: 6.6666666667vw 0;
+}
+.privacy02 .c_low_ttl01 {
+  margin-bottom: 5.3333333333vw;
+}
+.privacy02_desc {
+  margin-bottom: 5.3333333333vw;
+}
+
+.privacy03 {
+  padding: 6.6666666667vw 0 0;
+}
+.privacy03 .c_low_ttl03 {
+  margin-bottom: 5.3333333333vw;
+}
+.privacy03 .privacy_tbl_item {
+  margin-bottom: 9.3333333333vw;
+}
+.privacy03 .privacy_tbl_item:last-child {
+  margin-bottom: 0;
+}
+
+/**/
+.alpha {
+  list-style-type: lower-alpha;
+  margin-top: 20px;
+  padding-left: 0;
+  margin-bottom: 5.3333333333vw;
+}
+.alpha li {
+  margin-bottom: 15px;
+}
+
+.number {
+  margin-top: 20px;
+  padding-left: 0;
+  margin-bottom: 5.3333333333vw;
+}
+.number_li {
+  margin-bottom: 15px;
+  counter-increment: cnt;
+}
+.number_li::before {
+  content: "(" counter(cnt) ") ";
+}
+
+.normal_list {
+  list-style: inside;
+}
+
+.sub {
+  margin-top: 20px;
+  padding-left: 6.6666666667vw;
+  margin-bottom: 5.3333333333vw;
+}
+
+.ad_mb {
+  margin-bottom: 15px;
+}
+
+.add_text {
+  margin: 25px 0 35px;
+  text-align: right;
+}
+
+.add_wcontents {
+  margin: 35px 0;
+}
+
+.c_list_number.resize .item::before {
+  top: 0.5333333333vw;
+  font-size: 3.7333333333vw;
+}
+
+@media screen and (min-width: 768px) {
+  .privacy01 {
+    padding: 6.4375vw 0 1.875vw;
+  }
+  .privacy01 .c_low_ttl01 {
+    margin-bottom: 2.6875vw;
+  }
+  .privacy01_desc {
+    margin-bottom: 2.6875vw;
+  }
+  .privacy01 .c_list_number {
+    margin-bottom: 1vw;
+  }
+  .privacy01_date {
+    margin-bottom: 1.1875vw;
+  }
+  .privacy01_date .txt_content {
+    min-width: 6.25vw;
+  }
+  .privacy01_date .txt {
+    margin: 0 0.9375vw 0 0;
+  }
+  .privacy01_date.privacypolicy_date .txt_content {
+    min-width: 6.875vw;
+  }
+  .privacy01_info {
+    line-height: 1.75em;
+    font-size: 1.25vw;
+  }
+  .privacy02 {
+    padding: 0.9375vw 0;
+  }
+  .privacy02 .c_low_ttl01 {
+    margin-bottom: 2.6875vw;
+  }
+  .privacy02_desc {
+    margin-bottom: 2.6875vw;
+  }
+  .privacy03 {
+    padding: 1.6875vw 0 0;
+  }
+  .privacy03 .c_low_ttl03 {
+    margin-bottom: 1.4375vw;
+  }
+  .privacy03 .privacy_tbl_item {
+    margin-bottom: 2.6875vw;
+  }
+  .alpha {
+    padding-left: 2.0625vw;
+    margin-bottom: 2.625vw;
+  }
+  .number {
+    padding-left: 2.0625vw;
+    margin-bottom: 2.625vw;
+  }
+  .sub {
+    padding-left: 2.0625vw;
+    margin-bottom: 2.625vw;
+  }
+  .indent_list {
+    margin-left: 15px;
+  }
+  .c_list_number.resize .item::before {
+    font-size: 1vw;
+    top: 0.1875vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .indent_list {
+    margin-left: 2%;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .privacy01 {
+    padding: 103px 0 30px;
+  }
+  .privacy01 .c_low_ttl01 {
+    margin-bottom: 43px;
+  }
+  .privacy01_desc {
+    margin-bottom: 43px;
+  }
+  .privacy01 .c_list_number {
+    margin-bottom: 16px;
+  }
+  .privacy01_date {
+    margin-bottom: 19px;
+  }
+  .privacy01_date .txt_content {
+    min-width: 100px;
+  }
+  .privacy01_date .txt {
+    margin: 0 15px 0 0;
+  }
+  .privacy01_date.privacypolicy_date .txt_content {
+    min-width: 110px;
+  }
+  .privacy01_info {
+    font-size: 1.25rem;
+  }
+  .privacy02 {
+    padding: 15px 0;
+  }
+  .privacy02 .c_low_ttl01 {
+    margin-bottom: 43px;
+  }
+  .privacy02_desc {
+    margin-bottom: 43px;
+  }
+  .privacy03 {
+    padding: 27px 0 0;
+  }
+  .privacy03 .c_low_ttl03 {
+    margin-bottom: 23px;
+  }
+  .privacy03 .privacy_tbl_item {
+    margin-bottom: 43px;
+  }
+  .c_list_number.resize .item::before {
+    font-size: 1rem;
+    top: 3px;
+  }
+}
+/*# sourceMappingURL=privacy.css.map */

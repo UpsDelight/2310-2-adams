@@ -1,0 +1,48 @@
+/*!
+global > color
+------------------------------
+*/
+/*!
+global > content-width
+------------------------------
+*/
+/*!
+global > font
+------------------------------
+*/
+@media screen and (min-width: 768px) {
+  .result_main {
+    padding: 78px 0 70px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .result_main .pagination, .result_main .wp-pagenavi {
+    margin: 12px auto 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .result_main .news_ttl {
+    margin-bottom: 35px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .result_main .news_archive {
+    padding: 31px 15px 39px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .result_main .news_archive {
+    padding: 31px 29px 39px;
+    min-height: 288px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .result_main .news_archive_cat li {
+    margin-bottom: 11px;
+  }
+}
+.result_main .news_archive_cat a {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/*# sourceMappingURL=result.css.map */

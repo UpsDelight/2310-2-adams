@@ -1,0 +1,395 @@
+/*!
+global > color
+------------------------------
+*/
+/*!
+global > content-width
+------------------------------
+*/
+/*!
+global > font
+------------------------------
+*/
+.form_area {
+  margin-top: 6.25vw;
+}
+.form_area .container {
+  background-color: #F6FAFB;
+}
+.form_area_content > .container {
+  padding-top: 2.75vw;
+}
+.form_area_content .text_desc {
+  margin-top: 1.25vw;
+}
+.form_area_content .text_desc .required {
+  font-weight: bold;
+  color: #DC2B2B;
+  display: inline-block;
+}
+.form_area_content .text_underline {
+  margin-top: 1vw;
+}
+.form_area_context {
+  margin-top: -1px;
+}
+.form_area_context .container {
+  padding-top: 2.9375vw;
+  padding-bottom: 3.375vw;
+}
+
+.form .c_low_ttl02 {
+  margin-bottom: 1.75vw;
+}
+.form .your_contact {
+  margin-top: 1.25vw;
+}
+.form_group {
+  border-top: 1px solid #E6EBEF;
+}
+.form .your_inquiry .form_group {
+  padding: 1.25vw 1.875vw;
+}
+.form .your_contact .form_group {
+  padding: 1.8125vw 1.875vw 1.875vw;
+}
+.form .label_2d {
+  display: flex;
+}
+.form .label_2d textarea,
+.form .label_2d input[type=text],
+.form .label_2d input[type=email] {
+  border: 0;
+  outline: none;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.75;
+  color: #2C4152;
+  font-size: 1vw;
+  resize: none;
+}
+.form .label_2d textarea::-moz-placeholder, .form .label_2d input[type=text]::-moz-placeholder, .form .label_2d input[type=email]::-moz-placeholder {
+  color: #CECECE;
+}
+.form .label_2d textarea::placeholder,
+.form .label_2d input[type=text]::placeholder,
+.form .label_2d input[type=email]::placeholder {
+  color: #CECECE;
+}
+.form .label_2d textarea {
+  padding: 1.125vw 1.25vw;
+}
+.form .label_2d input,
+.form .label_2d input[type=text],
+.form .label_2d input[type=email] {
+  height: 3.75vw;
+  padding: 0.875vw 1.375vw;
+}
+.form .label_2d .label {
+  width: 18.75vw;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #44474E;
+  font-size: 1vw;
+  padding-top: 0.8125vw;
+}
+.form .label_2d .label .required {
+  font-weight: 900;
+  color: #DC2B2B;
+  display: inline-block;
+  margin-left: 8px;
+}
+.form .label_2d .input {
+  width: calc(100% - 18.75vw);
+}
+.form .label_2d.address_group {
+  margin-bottom: 1.4375vw;
+}
+.form .label_2d.address_group .input {
+  display: flex;
+  align-items: center;
+}
+.form .label_2d.address_group input[type=text] {
+  width: 12.3125vw;
+  margin-left: 1.25vw;
+}
+.form_res {
+  margin-top: 4.5vw;
+}
+.form_res .about_privacy {
+  color: #00ADC6;
+  -webkit-text-decoration: underline 1px solid #00ADC6;
+  text-decoration: underline 1px solid #00ADC6;
+}
+.form_res .accept_res {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5625vw;
+}
+.form_res .accept_res input[type=checkbox] {
+  margin-right: 0.625vw;
+}
+.form_res input[type=checkbox] {
+  width: 1.875vw;
+  height: 1.875vw;
+  display: block;
+  outline: none;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background-color: #E6F0F7;
+  position: relative;
+  transition: all 150ms linear;
+}
+.form_res input[type=checkbox]::after {
+  content: "";
+  width: 1vw;
+  height: 0.4375vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: translate(-50%, -50%) rotate(-45deg) scale(0);
+  opacity: 0;
+  transition: all 150ms linear;
+}
+.form_res input[type=checkbox]:checked {
+  background-color: #00ADC6;
+}
+.form_res input[type=checkbox]:checked::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(-45deg) scale(1);
+}
+.form_submit {
+  width: 48.75vw;
+  height: 5vw;
+  margin-top: 3.375vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2C4152;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #FFF;
+  font-size: 1.25vw;
+}
+.form_res .accept_res label {
+  display: flex;
+  flex-wrap: wrap;
+}
+/**/
+.to_topbutton {
+  background-color: #1D4156;
+  color: #fff;
+  width: 280px;
+  padding: 20px 30px;
+  transition: 0.5s all;
+  display: block;
+  margin-top: 25px;
+  text-align: center;
+}
+.to_topbutton:hover {
+  transition: 0.5s all;
+  opacity: 0.6;
+}
+
+.thanks_padding {
+  padding-bottom: 45px;
+}
+
+@media only screen and (max-width: 768px) {
+  .form_area {
+    margin-top: 10.6666666667vw;
+  }
+  .form_area_content > .container {
+    padding-top: 5.3333333333vw;
+  }
+  .form_area_content .text_desc {
+    margin-top: 5.3333333333vw;
+  }
+  .form_area_content .text_underline {
+    margin-top: 4.2666666667vw;
+  }
+  .form_area_context .container {
+    padding-top: 10.6666666667vw;
+    padding-bottom: 10.6666666667vw;
+  }
+  .form .c_low_ttl02 {
+    margin-bottom: 5.3333333333vw;
+  }
+  .form .your_contact {
+    margin-top: 5.3333333333vw;
+  }
+  .form .your_inquiry .form_group,
+.form .your_contact .form_group {
+    padding: 5.3333333333vw 0;
+  }
+  .form .label_2d {
+    display: block;
+  }
+  .form .label_2d textarea,
+.form .label_2d input[type=text],
+.form .label_2d input[type=email] {
+    height: auto;
+    font-size: 3.7333333333vw;
+    padding: 3.2vw;
+  }
+  .form .label_2d .label {
+    width: 100%;
+    font-size: 4.2666666667vw;
+    padding-top: 2.6666666667vw;
+    margin-bottom: 2.6666666667vw;
+  }
+  .form .label_2d .input {
+    width: 100%;
+  }
+  .form .label_2d.address_group {
+    margin-bottom: 0;
+  }
+  .form .label_2d.address_group input[type=text] {
+    width: 100%;
+    margin-left: 5.3333333333vw;
+  }
+  .form_res {
+    margin-top: 3vw;
+  }
+  .form_res .mwform-checkbox-field-text {
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+    order: 1;
+    margin-bottom: 2.6666666667vw;
+  }
+  .form_res .accept_res {
+    margin-top: 3vw;
+  }
+  .form_res .accept_res input[type=checkbox] {
+    margin-left: auto;
+    margin-right: auto;
+    order: 2;
+  }
+  .form_res .accept_res_text {
+    line-height: 1.4;
+  }
+  .form_res input[type=checkbox] {
+    width: 9.6vw;
+    height: 9.6vw;
+  }
+  .form_res input[type=checkbox]::after {
+    content: "";
+    width: 5.3333333333vw;
+    height: 3.2vw;
+  }
+  .form_submit {
+    width: 84vw;
+    height: 18.6666666667vw;
+    margin-top: 14.4vw;
+    font-size: 5.3333333333vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form_area .container {
+    padding-left: 6.25vw;
+    padding-right: 6.25vw;
+  }
+}
+
+@media only screen and (min-width: 1601px) {
+  .form_area {
+    margin-top: 100px;
+  }
+  .form_area .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .form_area_content > .container {
+    padding-top: 44px;
+  }
+  .form_area_content .text_desc {
+    margin-top: 20px;
+  }
+  .form_area_content .text_underline {
+    margin-top: 16px;
+  }
+  .form_area_context .container {
+    padding-top: 47px;
+    padding-bottom: 54px;
+  }
+  .form .c_low_ttl02 {
+    margin-bottom: 28px;
+  }
+  .form .your_contact {
+    margin-top: 20px;
+  }
+  .form .your_inquiry .form_group {
+    padding: 20px 30px;
+  }
+  .form .your_contact .form_group {
+    padding: 29px 30px 30px;
+  }
+  .form .label_2d textarea,
+.form .label_2d input[type=text],
+.form .label_2d input[type=email] {
+    font-size: 1rem;
+  }
+  .form .label_2d textarea {
+    padding: 18px 20px;
+  }
+  .form .label_2d input,
+.form .label_2d input[type=text],
+.form .label_2d input[type=email] {
+    height: 60px;
+    padding: 14px 22px;
+  }
+  .form .label_2d .label {
+    width: 300px;
+    font-size: 1rem;
+    padding-top: 13px;
+  }
+  .form .label_2d .input {
+    width: calc(100% - 300px);
+  }
+  .form .label_2d.address_group {
+    margin-bottom: 23px;
+  }
+  .form .label_2d.address_group input[type=text] {
+    width: 197px;
+    margin-left: 20px;
+  }
+  .form_res {
+    margin-top: 72px;
+  }
+  .form_res .accept_res {
+    margin-top: 25px;
+  }
+  .form_res .accept_res input[type=checkbox] {
+    margin-right: 10px;
+  }
+  .form_res input[type=checkbox] {
+    width: 30px;
+    height: 30px;
+  }
+  .form_res input[type=checkbox]::after {
+    width: 16px;
+    height: 7px;
+  }
+  .form_submit {
+    width: 780px;
+    height: 80px;
+    margin-top: 54px;
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=form.css.map */

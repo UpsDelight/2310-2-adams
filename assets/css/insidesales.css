@@ -1,0 +1,125 @@
+/*!
+global > color
+------------------------------
+*/
+/*!
+global > content-width
+------------------------------
+*/
+/*!
+global > font
+------------------------------
+*/
+/*!
+page > contactcenter
+------------------------------
+*/
+.block_title {
+  line-height: 2;
+}
+
+.any_trouble {
+  padding-top: 81px;
+}
+
+.magic_box {
+  margin-top: 41px;
+}
+
+.menu_examples {
+  margin-top: 100px;
+  padding-top: 94px;
+  padding-bottom: 37px;
+}
+
+.what_the_amazing {
+  margin-top: 250px;
+}
+.what_the_amazing_block {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 270px;
+  padding-bottom: 85px;
+  justify-content: space-between;
+}
+.what_the_amazing_block .item {
+  width: calc(33.33% - 65px);
+  margin-bottom: 12px;
+}
+.what_the_amazing_block .item_image {
+  width: 394px;
+  max-width: 100%;
+  position: absolute;
+  top: 11%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+}
+.what_the_amazing_block .item_image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.what_the_amazing_block .item .order {
+  margin-bottom: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.what_the_amazing_block .item .tag {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.75;
+  color: #FFF;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .c_low_intro_title {
+    margin-bottom: 3.5vw;
+  }
+  .block_wrap_title {
+    margin-bottom: 2.625vw;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .what_the_amazing_block .item {
+    width: calc(50% - 10px);
+  }
+  .what_the_amazing_block .item_image {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .any_trouble {
+    padding-top: 20px;
+  }
+  .menu_examples {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .what_the_amazing {
+    margin-top: 50px;
+  }
+  .what_the_amazing_block {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .what_the_amazing_block .item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .what_the_amazing_block .item_image {
+    width: 400px;
+    max-width: 80%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: none;
+  }
+}
+
+/*# sourceMappingURL=insidesales.css.map */

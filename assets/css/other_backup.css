@@ -1,0 +1,79 @@
+/*!
+global > color
+------------------------------
+*/
+/*!
+global > content-width
+------------------------------
+*/
+/*!
+global > font
+------------------------------
+*/
+.form_area {
+  margin-top: 6.25vw;
+}
+.form_area .container {
+  background-color: #F6FAFB;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.form_area_content {
+  padding-top: 10px;
+}
+.form_area_context {
+  margin-top: -1px;
+}
+
+.form_group {
+  border-top: 1px solid #E6EBEF;
+  padding-top: 1.875vw;
+  padding-bottom: 1.875vw;
+}
+.form .label_2d {
+  display: flex;
+}
+.form .label_2d textarea,
+.form .label_2d input[type=text],
+.form .label_2d input[type=email] {
+  border: 0;
+  outline: none;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  padding: 1.25vw;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.75;
+  color: #CECECE;
+  font-size: 1vw;
+}
+.form .label_2d textarea:focus,
+.form .label_2d input[type=text]:focus,
+.form .label_2d input[type=email]:focus {
+  box-shadow: 0 0 40px rgba(112, 112, 112, 0.25);
+}
+.form .label_2d .label {
+  width: 20.625vw;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #44474E;
+  font-size: 1vw;
+}
+.form .label_2d .label .required {
+  font-weight: 900;
+  color: #DC2B2B;
+}
+.form .label_2d .input {
+  width: calc(100% - 20.625vw);
+}
+.form .label_2d.address_group .input {
+  display: flex;
+  align-items: center;
+}
+.form .label_2d.address_group input[type=text] {
+  width: 12.3125vw;
+  margin-left: 1.25vw;
+}
+/*# sourceMappingURL=other.css.map */

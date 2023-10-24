@@ -1,0 +1,29 @@
+@use "../../../global"as g;
+
+.location {
+    margin-top: g.vw(95);
+
+    .c_low_ttl02 {
+        margin-top: g.vw(43);
+        margin-bottom: g.vw(16);
+    }
+
+    .map_img {
+        margin-top: g.vw(21);
+    }
+}
+
+@include g.screen_min(1601px) {
+    .location {
+        margin-top: 95px;
+
+        .c_low_ttl02 {
+            margin-top: 43px;
+            margin-bottom: 16px;
+        }
+
+        .map_img {
+            margin-top: 21px;
+        }
+    }
+}

@@ -1,0 +1,368 @@
+@use "../global"as g;
+
+/*!
+component > footer
+------------------------------
+*/
+.footer {
+    margin-top: g.vw(170);
+    // background-color: #E5E5E5;
+
+    &_container {
+        position: relative;
+        z-index: 1;
+        padding-top: g.vw(87);
+        padding-bottom: g.vw(90);
+
+        &_bi {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &_content {}
+
+    &_title {
+        @include g.fonts(0, 30, 700, 50, 0, #FFF);
+        font-size: g.vw(30);
+
+        text-align: center;
+    }
+
+    &_contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-top: g.vw(41);
+
+        .box {
+            width: g.vw(560);
+            height: g.vw(220);
+
+            border: g.vw(10) solid rgba($color: #FFF, $alpha: .5);
+
+            .nav_link {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &_phone {
+
+            padding-top: g.vw(57);
+            padding-left: g.vw(81);
+
+            .text_small {
+                @include g.fonts(0, 22, 700, 28, 0, #FFF);
+                font-size: g.vw(22);
+            }
+
+            .phone_number {
+                @include g.fonts(g.$f_montserrat, 45, 700, 45*1.5, 0, #FFF);
+                font-size: g.vw(45);
+            }
+
+            .small {
+                @include g.fonts(0, 30, 700, 60, 0, #FFF);
+                font-size: g.vw(30);
+                text-transform: uppercase;
+                margin-right: g.vw(20);
+            }
+        }
+
+        &_using_form {
+            text-align: center;
+            padding-top: g.vw(39);
+
+            .text {
+                @include g.fonts(0, 22, 700, 28, 0, #FFF);
+                font-size: g.vw(22);
+            }
+
+            .direc {
+                width: g.vw(326);
+                height: g.vw(72);
+
+                margin-top: g.vw(25);
+                margin-left: auto;
+                margin-right: auto;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @include g.fonts(0, 18, 700, 23, 0, #FFF);
+                font-size: g.vw(18);
+
+                background-color: #264154;
+            }
+        }
+    }
+
+    &_logo {
+        width: g.vw(312);
+    }
+
+    &_menu {
+        display: flex;
+
+        border-top: 1px solid #FFF;
+        border-bottom: 1px solid #FFF;
+
+        .l {
+            width: g.vw(507);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .r {
+            width: calc(100% - g.vw(507));
+            border-left: 1px solid rgba($color: #E5E5E5, $alpha: .48);
+        }
+
+        &_item {
+            @include g.fonts(0, 16, 500, 32, 0, #292C31);
+            font-size: g.vw(16);
+            margin-left: g.vw(15);
+            margin-right: g.vw(15);
+        }
+
+        .language {
+            width: g.vw(210);
+            height: 100%;
+
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include g.fonts(g.$f_montserrat, 14, 500, 16, 0, #737882);
+            font-size: g.vw(14);
+
+            border-left: 1px solid rgba($color: #E5E5E5, $alpha: .48);
+
+            icon-image {
+                width: g.vw(16);
+                margin-right: g.vw(6);
+            }
+        }
+
+        .layer_1 {
+            height: g.vw(100);
+            display: flex;
+            align-items: center;
+
+            padding-left: g.vw(45);
+            border-bottom: 1px solid rgba($color: #E5E5E5, $alpha: .48);
+
+            .l {}
+
+        }
+
+        .layer_2 {
+            padding-top: g.vw(20);
+            padding-left: g.vw(60);
+            padding-bottom: g.vw(17);
+        }
+
+        .copy_right {
+            @include g.fonts(0, 14, 400, 24, 0, #44474E);
+            font-size: g.vw(14);
+        }
+    }
+}
+
+@include g.screen_min(1601px) {
+    .footer {
+        margin-top: 170px;
+
+        &_container {
+            padding-top: 87px;
+            padding-bottom: 90px;
+
+        }
+
+        &_title {
+            font-size: g.rem(30);
+        }
+
+        &_contact {
+            margin-top: 41px;
+
+            .box {
+                width: 560px;
+                height: 220px;
+
+                border-width: 10px;
+            }
+
+            &_phone {
+
+                padding-top: 57px;
+                padding-left: 81px;
+
+                .text_small {
+                    font-size: g.rem(22);
+                }
+
+                .phone_number {
+                    font-size: g.rem(45);
+                }
+
+                .small {
+                    font-size: g.rem(30);
+                    margin-right: 20px;
+                }
+            }
+
+            &_using_form {
+                padding-top: 39px;
+
+                .text {
+                    font-size: g.rem(22);
+                }
+
+                .direc {
+                    width: 326px;
+                    height: 72px;
+
+                    margin-top: 25px;
+                    font-size: g.rem(18);
+                }
+            }
+        }
+
+        &_logo {
+            width: 312px;
+        }
+
+        &_menu {
+            .l {
+                width: 507px;
+            }
+
+            .r {
+                width: calc(100% - 507px);
+            }
+
+            &_item {
+                font-size: g.rem(16);
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+
+            .language {
+                width: 210px;
+                font-size: 14px;
+
+                icon-image {
+                    width: 16px;
+                    margin-right: 6px;
+                }
+            }
+
+            .layer_1 {
+                height: 100px;
+                padding-left: 45px;
+
+            }
+
+            .layer_2 {
+                padding-top: 20px;
+                padding-left: 60px;
+                padding-bottom: 17px;
+            }
+
+            .copy_right {
+                font-size: g.rem(14);
+            }
+        }
+    }
+
+}
+
+@include g.screen_max(768px) {
+    .footer {
+        margin-top: g.vw(65, 375);
+
+        &_container {
+            padding-top: g.vw(48, 375);
+            padding-bottom: g.vw(50, 375);
+
+            &_bi {
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &_content {}
+
+        &_title {
+            font-size: g.vw(25, 375);
+            line-height: 1.6;
+        }
+
+        &_contact {
+            display: block;
+            margin-top: g.vw(27, 375);
+
+            .box {
+                width: 100%;
+                height: auto;
+                padding-bottom: g.vw(10, 375);
+
+                border-width: g.vw(10, 375);
+
+                &+.box {
+                    margin-top: g.vw(10, 375);
+                }
+            }
+
+            &_phone {
+                padding-top: g.vw(22, 375);
+                padding-left: g.vw(38, 375);
+
+                .text_small {
+                    font-size: g.vw(20, 375);
+                }
+
+                .phone_number {
+                    font-size: g.vw(30, 375);
+                }
+
+                .small {
+                    font-size: g.vw(20, 375);
+                }
+            }
+
+            &_using_form {
+                padding-top: g.vw(20, 375);
+                padding-bottom: g.vw(12, 375);
+
+                .text {
+                    font-size: g.vw(20, 375);
+                    line-height: 1.4;
+                }
+
+                .direc {
+                    width: g.vw(250, 375);
+                    height: g.vw(72, 375);
+
+                    margin-top: g.vw(10, 375);
+                    font-size: g.vw(18, 375);
+                }
+            }
+        }
+    }
+}

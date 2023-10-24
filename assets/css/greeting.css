@@ -1,0 +1,150 @@
+/*!
+global > color
+------------------------------
+*/
+/*!
+global > content-width
+------------------------------
+*/
+/*!
+global > font
+------------------------------
+*/
+.c_low_ttl01.none {
+  padding-left: 0;
+}
+.c_low_ttl01.none::before {
+  display: none;
+}
+
+.keyword {
+  margin-top: 122px;
+  position: relative;
+}
+.keyword .decore {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.keyword .decore .shape {
+  position: absolute;
+}
+.keyword .decore .shape:nth-child(1) {
+  top: 84px;
+  left: 0;
+  width: 1080px;
+  max-width: 80vw;
+  height: 762px;
+  background-color: #F6FAFB;
+}
+.keyword_content {
+  display: flex;
+  justify-content: space-between;
+}
+.keyword_content .l {
+  width: calc(100% - 440px);
+  padding-bottom: 47px;
+}
+.keyword_content .r {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.keyword_content .c_low_ttl01 {
+  margin-bottom: 49px;
+}
+.keyword_content .text_intro {
+  max-width: 600px;
+  margin-bottom: 32px;
+}
+.keyword .avatar {
+  margin-top: 14px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.keyword .signature {
+  color: #44474E;
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: 78px;
+}
+.keyword .signature .text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.8;
+  font-size: 1.5625rem;
+  margin-bottom: 6px;
+}
+.keyword .signature .name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.5714285714;
+  font-size: 2.1875rem;
+  margin-bottom: 9px;
+}
+.keyword .signature .year {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .c_low_ttl01.none {
+    line-height: 1.8;
+  }
+  .keyword {
+    margin-top: 12.8vw;
+  }
+  .keyword .decore .shape:nth-child(1) {
+    top: 22.4vw;
+    width: 73.3333333333vw;
+    height: 337.8666666667vw;
+  }
+  .keyword_content {
+    display: block;
+  }
+  .keyword_content .l,
+.keyword_content .r {
+    width: 100%;
+  }
+  .keyword_content .l {
+    padding-bottom: 0;
+  }
+  .keyword_content .r {
+    display: block;
+  }
+  .keyword_content .c_low_ttl01 {
+    margin-bottom: 21px;
+  }
+  .keyword_content .text_intro {
+    max-width: 100%;
+    margin-bottom: 31px;
+  }
+  .keyword .avatar {
+    width: 335px;
+    max-width: 100%;
+    margin-top: 14px;
+    margin-left: auto;
+  }
+  .keyword .signature {
+    margin-top: 27px;
+    margin-bottom: 0;
+  }
+  .keyword .signature .text {
+    font-size: 1.25rem;
+    margin-bottom: 3px;
+  }
+  .keyword .signature .name {
+    font-size: 1.5625rem;
+    margin-bottom: 5px;
+  }
+  .keyword .signature .year {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=greeting.css.map */

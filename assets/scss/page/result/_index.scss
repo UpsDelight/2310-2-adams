@@ -1,0 +1,36 @@
+@use "../../global" as g;
+.result_main{
+    @include g.mq('md'){
+        padding:78px 0 70px;
+    }
+    .pagination, .wp-pagenavi{
+        @include g.mq('md') {
+            margin: 12px auto 0;
+        }
+    }
+    .news_ttl{
+        @include g.mq('md') {
+            margin-bottom: 35px;
+        }
+    }
+    .news_archive {
+        @include g.mq('md') {
+            padding: 31px 15px 39px;
+        }
+        @include g.mq('xl') {
+            padding: 31px 29px 39px;
+            min-height: 288px;
+        }
+        &_cat {
+            li{
+                @include g.mq('md') {
+                    margin-bottom: 11px;
+                }
+            }
+            a{
+                font-family: 'Noto Sans JP', sans-serif;
+            }
+        }
+    }
+    
+}

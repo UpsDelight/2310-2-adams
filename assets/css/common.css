@@ -1,0 +1,214 @@
+/* =========================================================================================================
+ 　　base
+========================================================================================================= */
+
+body {
+	position: relative;
+	font-weight: 400;
+	font-family: "游ゴシック Medium", "Yu Gothic Medium", YuGothic, "游ゴシック体", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
+	color: #333;
+	font-size: 1.4rem;
+	line-height: 1.6;
+}
+
+#wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+/*	ページ切り替え時にフェードアウト・フェードインさせる	ここから　*/
+
+@keyframes wrapperFade {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+#wrapper:after {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color:#fff;
+	z-index: 99999;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity .8s ease;
+}
+#wrapper.fadeout:after {
+	opacity: 1;
+}
+
+/*	ページ切り替え時にフェードアウト・フェードインさせる　ここまで	*/
+
+a {
+	color: #333;
+	display: inline-block;
+	backface-visibility: hidden;
+	transition: all .5s cubic-bezier(.5,0,0,1);
+}
+
+a figure img {
+	transition: all .5s cubic-bezier(.4,.8,.74,1) 0s;
+}
+
+.container {
+    max-width: 1160px;
+	padding: 0 15px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+
+/*	コンテンツのフェードイン用　ここから	*/
+　
+.fade-box {
+	visibility: hidden;
+	opacity: 0;
+}
+.fade-contents {
+	visibility: hidden;
+	opacity: 0;
+}
+.fadeend .fade .fade-contents,
+.fadeend.fade .fade-contents {
+    animation-fill-mode:both;
+	animation-duration:1.5s;
+	animation-timing-function: cubic-bezier(.5,0,0,1);
+    animation-name: fade;
+    visibility: visible !important;
+}
+.fadeend .fade .fade-contents.fade-left,
+.fadeend.fade .fade-contents.fade-left {
+    animation-name: fadeLeft;
+}
+.fadeend .fade .fade-contents.fade-right,
+.fadeend.fade .fade-contents.fade-right {
+    animation-name: fadeRight;
+}
+.fadeend .fade .fade-contents.fade-top,
+.fadeend.fade .fade-contents.fade-top {
+    animation-name: fadeTop;
+}
+.fadeend .fade .fade-contents.fade-stay,
+.fadeend.fade .fade-contents.fade-stay {
+    animation-name: fadeStay;
+}
+.fade-delay {
+	animation-delay: 0.5s;
+}
+
+@keyframes fade {
+    0% { opacity: 0; transform: translateY(20px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeLeft {
+    0% { opacity: 0; transform: translateX(-20px);}
+    100% { opacity: 1; transform: translateX(0);}
+}
+@keyframes fadeRight {
+    0% { opacity: 0; transform: translateX(20px);}
+    100% { opacity: 1; transform: translateX(0);}
+}
+@keyframes fadeTop {
+    0% { opacity: 0; transform: translateY(-20px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeStay {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+
+/*	コンテンツのフェードイン用　ここまで	*/
+
+
+/*	スクロールバーカスタマイズ用	*/
+
+/* scroll bar */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+	background-color: #eee;
+}
+::-webkit-scrollbar-thumb {
+	cursor: pointer;
+	background: #333;
+	border-radius:10px;
+}
+::-moz-selection {
+	background-color: #eee;
+	text-shadow: none;
+}
+::selection {
+	background-color: #eee;
+	text-shadow: none;
+}
+
+
+/*	英語・明朝体用フォント*/
+
+.en {
+	font-family: ;
+}
+
+.min {
+	font-family: ;
+}
+
+
+/* =====================
+  header
+===================== */
+
+header {
+
+}
+
+
+/* =====================
+  footer
+===================== */
+
+footer {
+
+}
+
+@media screen and (max-width: 767px) {
+	.pc {
+		display: none;
+	}
+}
+
+/* ====================================================================================
+		tablet
+==================================================================================== */
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 1.6rem;
+	}
+
+	.container {
+		padding: 0 20px;
+	}
+
+	/*	PCのみ・SPのみ表示用	*/
+	.sp {
+		display: none;
+	}
+
+}
+
+
+
+/* ====================================================================================
+		PC
+==================================================================================== */
+
+@media screen and (min-width: 1024px) {
+
+
+	
+}

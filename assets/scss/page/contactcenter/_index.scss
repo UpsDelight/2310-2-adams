@@ -1,0 +1,222 @@
+@use "../../global"as g;
+
+/*!
+page > contactcenter
+------------------------------
+*/
+.block_title {
+    line-height: 2;
+}
+
+.any_trouble {
+    padding-top: 81px;
+}
+
+
+.call_solution {
+    margin-top: 116px;
+
+    &_box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin-top: 95px;
+        margin-left: -16px;
+        margin-right: -16px;
+
+        .item {
+            width: 206px;
+
+            margin-left: 16px;
+            margin-right: 16px;
+
+            text-align: center;
+
+            margin-bottom: 73px;
+
+            .icon {
+                width: 100%;
+
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+                filter: brightness(1.15);
+            }
+
+            .tag {
+                // @include g.fonts(0, 24, 700, 28, 0, #3CA629);
+                @include g.fonts(0, 24, 700, 28, 0, #50b63d);
+                font-size: g.rem(24);
+
+                margin-top: 24px;
+            }
+        }
+    }
+
+    &_desc {
+        text-align: center;
+    }
+}
+
+.menu_examples {
+    margin-top: 50px;
+
+    padding-top: 116px;
+    padding-bottom: 69px;
+}
+
+.what_the_amazing {
+
+    &_block {
+        display: flex;
+        flex-wrap: wrap;
+
+        margin-left: -25px;
+        margin-right: -25px;
+
+        padding-top: 100px;
+        padding-bottom: 22px;
+
+        .item {
+            width: calc(50% - 50px);
+
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-bottom: 12px;
+
+            &_image {
+                img {
+                    display: block;
+
+                    width: 467px;
+                    max-width: 85%;
+                    height: auto;
+                }
+            }
+
+            .tag {
+                @include g.fonts(0, 25, 700, 38, 0, #FFF);
+                font-size: g.rem(25);
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@include g.screen_min(768px) {
+    .c_low_intro {
+        &_title {
+            margin-bottom: 56px;
+        }
+    }
+
+    .block_wrap_title {
+        margin-bottom: 42px;
+    }
+}
+
+@include g.screen_max(1024px) {
+
+    .call_solution {
+        &_box {
+            margin-left: -10px;
+            margin-right: -10px;
+
+            .item {
+                width: calc(33.33% - 20px);
+
+                margin-left: 10px;
+                margin-right: 10px;
+
+                margin-bottom: 20px;
+
+                .icon {
+
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                .tag {
+                    @include g.fonts(0, 24, 700, 28, 0, #3CA629);
+                    font-size: g.rem(24);
+
+                    margin-top: 24px;
+                }
+            }
+        }
+    }
+}
+
+@include g.screen_max(767px) {
+
+    .any_trouble {
+        padding-top: 20px;
+    }
+
+
+    .call_solution {
+        margin-top: 60px;
+
+        &_box {
+            justify-content: space-between;
+
+            .item {
+                width: calc(50% - 10px);
+
+                margin-left: 0;
+                margin-right: 0;
+
+                .tag {
+                    font-size: g.rem(16);
+                }
+            }
+        }
+    }
+
+    .menu_examples {
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .what_the_amazing {
+
+        &_block {
+            display: block;
+            margin-left: 0;
+            margin-right: 0;
+
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+            .item {
+                width: 100%;
+
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 20px;
+
+                &_image {
+                    width: 400px;
+                    max-width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+
+                .tag {
+                    font-size: g.rem(20);
+                }
+            }
+        }
+    }
+
+}

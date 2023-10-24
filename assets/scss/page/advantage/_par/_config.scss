@@ -1,0 +1,13 @@
+@use "../../../global"as g;
+
+.little_red_riding_hood {
+    img {
+        height: auto;
+        display: block;
+        object-fit: initial;
+    }
+}
+
+.footer {
+    margin-top: 0;
+}

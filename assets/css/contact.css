@@ -1,0 +1,510 @@
+/*!
+global > color
+------------------------------
+*/
+/*!
+global > content-width
+------------------------------
+*/
+/*!
+global > font
+------------------------------
+*/
+.contact01 {
+  padding: 50px 0 25px;
+}
+@media screen and (min-width: 768px) {
+  .contact01 {
+    padding: 110px 0 30px;
+  }
+}
+.contact01_link {
+  display: flex;
+  flex-wrap: wrap;
+  background: #F6FAFB;
+  margin-bottom: 14px;
+  text-decoration: none;
+  padding: 20px 10px;
+}
+@media screen and (min-width: 768px) {
+  .contact01_link {
+    transition: all 0.5s;
+    flex-wrap: nowrap;
+    padding: 50px 60px 46px;
+    margin-bottom: 13px;
+  }
+  .contact01_link:hover {
+    opacity: 0.7;
+  }
+}
+.contact01_circle {
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 0 auto 15px;
+}
+@media screen and (min-width: 768px) {
+  .contact01_circle {
+    width: 150px;
+    height: 150px;
+    margin: 0 50px 0 0;
+  }
+}
+.contact01_info {
+  padding-top: 6px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .contact01_info {
+    width: auto;
+    padding-top: 37px;
+  }
+}
+.contact01_info .ttl_en {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #00ADC6;
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 376px) {
+  .contact01_info .ttl_en {
+    font-size: 1.375rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact01_info .ttl_en {
+    text-align: left;
+    font-size: 1.5625rem;
+  }
+}
+.contact01_info .ttl_jp {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.3333333333;
+  color: #44474E;
+  font-size: 1.375rem;
+}
+@media screen and (min-width: 376px) {
+  .contact01_info .ttl_jp {
+    font-size: 1.625rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact01_info .ttl_jp {
+    text-align: left;
+    font-size: 1.875rem;
+    line-height: 1.5666666667em;
+  }
+}
+.contact01_link01 .contact01_circle {
+  background: #00ADC7;
+}
+.contact01_link01 .contact01_circle img {
+  width: 30px;
+  height: 30px;
+}
+@media screen and (min-width: 768px) {
+  .contact01_link01 .contact01_circle img {
+    width: 46px;
+    height: 46px;
+  }
+}
+.contact01_link01 .ttl_en {
+  color: #00ADC7;
+}
+.contact01_link02 .contact01_circle {
+  background: #ABC25F;
+}
+.contact01_link02 .contact01_circle img {
+  width: 28px;
+  height: 30px;
+}
+@media screen and (min-width: 768px) {
+  .contact01_link02 .contact01_circle img {
+    width: 41.67px;
+    height: 43.46px;
+  }
+}
+.contact01_link02 .ttl_en {
+  color: #ABC25F;
+}
+.contact01_link03 .contact01_circle {
+  background: #BDAB74;
+}
+.contact01_link03 .contact01_circle img {
+  width: 30px;
+  height: 30px;
+}
+@media screen and (min-width: 768px) {
+  .contact01_link03 .contact01_circle img {
+    width: 45px;
+    height: 46px;
+  }
+}
+.contact01_link03 .ttl_en {
+  color: #BDAB74;
+}
+.contact01_link04 .contact01_circle {
+  background: #006DCA;
+}
+.contact01_link04 .contact01_circle img {
+  width: 28px;
+  height: 32px;
+}
+@media screen and (min-width: 768px) {
+  .contact01_link04 .contact01_circle img {
+    width: 33.33px;
+    height: 43.75px;
+  }
+}
+.contact01_link04 .ttl_en {
+  color: #006DCA;
+}
+.contact01_link05 .contact01_circle {
+  background: #00ADC6;
+}
+.contact01_link05 .contact01_circle img {
+  width: 26px;
+  height: 30px;
+}
+@media screen and (min-width: 768px) {
+  .contact01_link05 .contact01_circle img {
+    width: 41.67px;
+    height: 46px;
+  }
+}
+.contact01_link05 .ttl_en {
+  color: #00ADC6;
+}
+
+.contact02 {
+  padding: 25px 0 25px;
+}
+@media screen and (min-width: 768px) {
+  .contact02 {
+    padding: 60px 0 30px;
+  }
+}
+.contact02 .c_low_ttl02 {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .contact02 .c_low_ttl02 {
+    margin-bottom: 42px;
+  }
+}
+
+.contact_frame {
+  border: solid 1px #D9D9D9;
+  padding: 15px 13px;
+}
+@media screen and (min-width: 768px) {
+  .contact_frame {
+    padding: 50px 57px 43px 57px;
+  }
+}
+.contact_frame_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact_frame_left {
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  .contact_frame_left {
+    margin-bottom: 0;
+  }
+}
+.contact_frame_left .ttl01 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  line-height: 2.0476190476;
+  color: #44474E;
+  font-size: 0.875rem;
+  letter-spacing: -0.03em;
+}
+@media screen and (min-width: 768px) {
+  .contact_frame_left .ttl01 {
+    font-size: 1.3125rem;
+    letter-spacing: 0;
+  }
+}
+.contact_frame_left .ttl02 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.3333333333;
+  color: #44474E;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .contact_frame_left .ttl02 {
+    font-size: 1.5rem;
+  }
+}
+.contact_frame_right .txt_address {
+  position: relative;
+  font-size: 1.9rem;
+  font-weight: bold;
+  line-height: 1.9473684211;
+  color: #44474E;
+  font-size: 0.875rem;
+  line-height: 1.8em;
+}
+@media screen and (min-width: 768px) {
+  .contact_frame_right .txt_address {
+    font-size: 1.1875rem;
+    line-height: 2em;
+    top: 2px;
+  }
+}
+.contact_frame_txts {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .contact_frame_txts {
+    flex-wrap: nowrap;
+  }
+}
+.contact_frame_txts .txt_tel,
+.contact_frame_txts .txt_mail {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.9rem;
+  font-weight: bold;
+  line-height: 2.6315789474;
+  color: #44474E;
+  line-height: 1em;
+  font-size: 0.875rem;
+  display: inline-block;
+  margin: 0 2.6666666667vw 0 0;
+}
+@media screen and (min-width: 768px) {
+  .contact_frame_txts .txt_tel,
+.contact_frame_txts .txt_mail {
+    font-size: 1.1875rem;
+    line-height: 2.6em;
+    margin: 0 12px 0 0;
+  }
+}
+.contact_frame_txts .txt_tel {
+  margin: 0 10px 0 0;
+}
+@media screen and (min-width: 768px) {
+  .contact_frame_txts .txt_tel {
+    margin: 0 10px 0 0;
+  }
+}
+.contact_frame_txts .txt_mail {
+  margin: 0 10 0 0;
+}
+@media screen and (min-width: 768px) {
+  .contact_frame_txts .txt_mail {
+    margin: 0 15px 0 0;
+  }
+}
+.contact_frame_txts .txt_tel_link,
+.contact_frame_txts .txt_mail_link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.3rem;
+  font-weight: bold;
+  line-height: 2.1304347826;
+  color: #44474E;
+  line-height: 1em;
+  font-size: 0.875rem;
+  display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  .contact_frame_txts .txt_tel_link,
+.contact_frame_txts .txt_mail_link {
+    line-height: 2.13em;
+    font-size: 1.4375rem;
+  }
+}
+.contact_frame_txts .txt_tel_link {
+  color: #00ADC6;
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .contact_frame_txts .txt_tel_link {
+    pointer-events: none;
+    color: #44474E;
+    text-decoration: none;
+  }
+}
+.contact_frame_txts .txt_mail_link {
+  color: #00ADC6;
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .contact_frame_txts .txt_mail_link {
+    transition: all 0.5s;
+  }
+  .contact_frame_txts .txt_mail_link:hover {
+    opacity: 0.8;
+  }
+}
+.contact_frame_txts .txt_time {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.2857142857;
+  color: #9BA6AF;
+  font-size: 0.875rem;
+  display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  .contact_frame_txts .txt_time {
+    font-size: 0.875rem;
+  }
+}
+.contact_frame_txt {
+  margin: 0 10px 0 0;
+}
+.contact_frame_txt:last-child {
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .contact_frame_txt {
+    margin: 0 69px 0 0;
+  }
+}
+.contact_frame_special {
+  position: relative;
+  border: solid 1px #DE7C7C;
+  background: #FFF7F7;
+  padding: 12px;
+  margin: 0 0 25px;
+}
+@media screen and (min-width: 768px) {
+  .contact_frame_special {
+    padding: 18px 29px;
+    margin: 0 0 43px;
+  }
+}
+.contact_frame_special .ttl {
+  position: relative;
+  color: #DE7C7C;
+  padding-left: 30px;
+}
+@media screen and (min-width: 768px) {
+  .contact_frame_special .ttl {
+    padding-left: 30px;
+  }
+}
+.contact_frame_special .ttl::before {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url(../images/contact/icon_alert.svg) no-repeat center/contain;
+}
+@media screen and (min-width: 768px) {
+  .contact_frame_special .ttl::before {
+    width: 24px;
+    height: 24px;
+    top: 2px;
+  }
+}
+
+.contact03 {
+  padding: 25px 0;
+}
+@media screen and (min-width: 768px) {
+  .contact03 {
+    padding: 13px 0 0 0;
+  }
+}
+.contact03 .c_low_ttl03 {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .contact03 .c_low_ttl03 {
+    margin-bottom: 22px;
+  }
+}
+.contact03 .contact_frame01 {
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .contact03 .contact_frame01 {
+    margin-bottom: 45px;
+    padding: 50px 73px 45px 57px;
+  }
+}
+.contact03_desc {
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .contact03_desc {
+    margin-bottom: 46px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact03 .contact_frame02 {
+    padding: 50px 57px 50px 57px;
+  }
+}
+.contact03 .contact_frame02 .contact_frame_list {
+  margin-bottom: 20px;
+  padding-bottom: 25px;
+  border-bottom: solid 1px #E6EBEF;
+}
+@media screen and (min-width: 768px) {
+  .contact03 .contact_frame02 .contact_frame_list {
+    padding-bottom: 38px;
+    margin-bottom: 43px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact03 .contact_frame02 .contact_frame_txt {
+    margin: 0 43px 0 0;
+  }
+  .contact03 .contact_frame02 .contact_frame_txt:last-child {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact03 .contact_frame02 .contact_frame_txts .txt_tel {
+    margin: 0 23px 0 0;
+  }
+}
+.contact03_intro_recording .ttl {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2.3125;
+  color: #9BA6AF;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .contact03_intro_recording .ttl {
+    font-size: 1rem;
+  }
+}
+.contact03_intro_recording .desc {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #9BA6AF;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .contact03_intro_recording .desc {
+    font-size: 1rem;
+    padding-right: 15px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

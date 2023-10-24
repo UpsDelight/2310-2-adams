@@ -1,0 +1,35 @@
+@use '../../global'as *;
+
+.concerns {
+    >.inner {
+        position: relative;
+        z-index: 1;
+        padding-top: 60px;
+        padding-bottom: 30px;
+
+        &::after {
+            content: '';
+            width: 100%;
+            min-height: 60%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background-color: #F5FAFB;
+        }
+
+        @include mq('md') {
+            padding-top: 96px;
+            padding-bottom: 50px;
+            aspect-ratio: 160/95;
+        }
+    }
+
+    &_intro {
+        line-height: 2;
+        text-align: center;
+
+        @include mq('md') {}
+    }
+}

@@ -1,0 +1,28 @@
+@use '../../global' as *;
+
+.comp_hash_tag {
+    display: table;
+
+    .tag {
+        color: #9BA6AF;
+        border: 1px solid #9DA6AE;
+        display: inline-block;
+        margin-right: 5px;
+        margin-bottom: 5px;
+
+        @include mq('md') {
+            padding: 3px 13px;
+            margin-right: 12px;
+            margin-bottom: 12px;
+          
+        }
+    }
+    a{
+        transition: all 0.5s;
+        @include mq('md'){
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+}

@@ -1,0 +1,493 @@
+@use "../../global"as g;
+
+.contact01 {
+    padding: 50px 0 25px;
+
+    @include g.mq('md') {
+        padding: 110px 0 30px;
+    }
+
+    &_link {
+        display: flex;
+        flex-wrap: wrap;
+        background: #F6FAFB;
+        margin-bottom: 14px;
+        text-decoration: none;
+        padding: 20px 10px;
+
+        @include g.mq('md') {
+            transition: all 0.5s;
+            flex-wrap: nowrap;
+
+            padding: 50px 60px 46px;
+            margin-bottom: 13px;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    &_circle {
+        border-radius: 100%;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        margin: 0 auto 15px;
+
+        @include g.mq('md') {
+            width: 150px;
+            height: 150px;
+            margin: 0 50px 0 0;
+        }
+    }
+
+    &_info {
+        padding-top: 6px;
+        width: 100%;
+
+        @include g.mq('md') {
+            width: auto;
+            padding-top: 37px;
+        }
+
+        .ttl_en {
+            text-align: center;
+            @include g.fonts(g.$f_mosarat, 25, 400, 30, 30, #00ADC6);
+            font-size: g.rem(20);
+
+            @include g.mq('sm') {
+                font-size: g.rem(22);
+            }
+
+            @include g.mq('md') {
+                text-align: left;
+                font-size: g.rem(25);
+            }
+        }
+
+        .ttl_jp {
+            text-align: center;
+            @include g.fonts(0, 30, bold, 40, 0, #44474E);
+            font-size: g.rem(22);
+
+            @include g.mq('sm') {
+                font-size: g.rem(26);
+            }
+
+            @include g.mq('md') {
+                text-align: left;
+                font-size: g.rem(30);
+                line-height: 1.566666666666667em;
+            }
+        }
+    }
+
+    &_link01 {
+        .contact01_circle {
+            background: #00ADC7;
+
+            img {
+                width: 30px;
+                height: 30px;
+
+                @include g.mq('md') {
+                    width: 46px;
+                    height: 46px;
+                }
+            }
+        }
+
+        .ttl_en {
+            color: #00ADC7;
+        }
+    }
+
+    &_link02 {
+        .contact01_circle {
+            background: #ABC25F;
+
+            img {
+                width: 28px;
+                height: 30px;
+
+                @include g.mq('md') {
+                    width: 41.67px;
+                    height: 43.46px;
+                }
+            }
+        }
+
+        .ttl_en {
+            color: #ABC25F;
+        }
+    }
+
+    &_link03 {
+        .contact01_circle {
+            background: #BDAB74;
+
+            img {
+                width: 30px;
+                height: 30px;
+
+                @include g.mq('md') {
+                    width: 45px;
+                    height: 46px;
+                }
+            }
+        }
+
+        .ttl_en {
+            color: #BDAB74;
+        }
+    }
+
+    &_link04 {
+        .contact01_circle {
+            background: #006DCA;
+
+            img {
+                width: 28px;
+                height: 32px;
+
+                @include g.mq('md') {
+                    width: 33.33px;
+                    height: 43.75px;
+                }
+            }
+        }
+
+        .ttl_en {
+            color: #006DCA;
+        }
+    }
+
+    &_link05 {
+        .contact01_circle {
+            background: #00ADC6;
+
+            img {
+                width: 26px;
+                height: 30px;
+
+                @include g.mq('md') {
+                    width: 41.67px;
+                    height: 46px;
+                }
+            }
+        }
+
+        .ttl_en {
+            color: #00ADC6;
+        }
+    }
+}
+
+.contact02 {
+    padding: 25px 0 25px;
+
+    @include g.mq('md') {
+        padding: 60px 0 30px;
+    }
+
+    .c_low_ttl02 {
+        margin-bottom: 20px;
+
+        @include g.mq('md') {
+            margin-bottom: 42px;
+        }
+    }
+}
+
+.contact_frame {
+    border: solid 1px #D9D9D9;
+    padding: 15px 13px;
+
+
+    @include g.mq('md') {
+        padding: 50px 57px 43px 57px;
+    }
+
+    &_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &_left {
+        margin-bottom: 5px;
+
+        @include g.mq('md') {
+            margin-bottom: 0;
+        }
+
+        .ttl01 {
+            @include g.fonts(0, 21, 500, 43, 0, #44474E);
+            font-size: g.rem(14);
+            letter-spacing: -0.03em;
+
+            @include g.mq('md') {
+                font-size: g.rem(21);
+                letter-spacing: 0;
+            }
+        }
+
+        .ttl02 {
+            @include g.fonts(0, 24, bold, 32, 0, #44474E);
+            font-size: g.rem(14);
+
+            @include g.mq('md') {
+                font-size: g.rem(24);
+            }
+        }
+    }
+
+    &_right {
+        .txt_address {
+            position: relative;
+            @include g.fonts(0, 19, bold, 37, 0, #44474E);
+            font-size: g.rem(14);
+            line-height: 1.8em;
+
+            @include g.mq('md') {
+                font-size: g.rem(19);
+                line-height: 2em;
+                top: 2px;
+            }
+        }
+
+    }
+
+    &_txts {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include g.mq('md') {
+            flex-wrap: nowrap;
+        }
+
+        .txt_tel,
+        .txt_mail {
+            @include g.fonts(g.$f_mosarat, 19, bold, 50, 0, #44474E);
+            line-height: 1em;
+            font-size: g.rem(14);
+            display: inline-block;
+            margin: 0 g.vw(10, 375) 0 0;
+
+            @include g.mq('md') {
+                font-size: g.rem(19);
+                line-height: 2.6em;
+                margin: 0 12px 0 0;
+            }
+        }
+
+        .txt_tel {
+            margin: 0 10px 0 0;
+
+            @include g.mq('md') {
+                margin: 0 10px 0 0;
+            }
+        }
+
+        .txt_mail {
+            margin: 0 10 0 0;
+
+            @include g.mq('md') {
+                margin: 0 15px 0 0;
+            }
+        }
+
+        .txt_tel_link,
+        .txt_mail_link {
+            @include g.fonts(g.$f_mosarat, 23, bold, 49, 0, #44474E);
+            line-height: 1em;
+            font-size: g.rem(14);
+            display: inline-block;
+
+            @include g.mq('md') {
+                line-height: 2.13em;
+                font-size: g.rem(23);
+            }
+        }
+
+        .txt_tel_link {
+            color: #00ADC6;
+            text-decoration: underline;
+
+            @include g.mq('md') {
+                pointer-events: none;
+                color: #44474E;
+                text-decoration: none;
+            }
+        }
+
+        .txt_mail_link {
+            color: #00ADC6;
+            text-decoration: underline;
+
+            @include g.mq('md') {
+                transition: all 0.5s;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        .txt_time {
+            @include g.fonts(0, 14, 400, 32, 0, #9BA6AF);
+            font-size: g.rem(14);
+            display: inline-block;
+
+            @include g.mq('md') {
+                font-size: g.rem(14);
+            }
+        }
+    }
+
+    &_txt {
+        margin: 0 10px 0 0;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        @include g.mq('md') {
+            margin: 0 69px 0 0;
+        }
+    }
+
+    &_special {
+        position: relative;
+        border: solid 1px #DE7C7C;
+        background: #FFF7F7;
+        padding: 12px;
+        margin: 0 0 25px;
+
+        @include g.mq('md') {
+            padding: 18px 29px;
+            margin: 0 0 43px;
+        }
+
+        .ttl {
+            position: relative;
+            color: #DE7C7C;
+            padding-left: 30px;
+
+            @include g.mq('md') {
+                padding-left: 30px;
+            }
+
+            &::before {
+                position: absolute;
+                content: '';
+                top: 3px;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                background: url(../images/contact/icon_alert.svg) no-repeat center/contain;
+
+                @include g.mq('md') {
+                    width: 24px;
+                    height: 24px;
+                    top: 2px;
+                }
+            }
+        }
+    }
+}
+
+.contact03 {
+    padding: 25px 0;
+
+    @include g.mq('md') {
+        padding: 13px 0 0 0;
+    }
+
+    .c_low_ttl03 {
+        margin-bottom: 10px;
+
+        @include g.mq('md') {
+            margin-bottom: 22px;
+        }
+    }
+
+    .contact_frame01 {
+        margin-bottom: 25px;
+
+        @include g.mq('md') {
+            margin-bottom: 45px;
+            padding: 50px 73px 45px 57px;
+        }
+    }
+
+    &_desc {
+        margin-bottom: 25px;
+
+        @include g.mq('md') {
+            margin-bottom: 46px;
+        }
+    }
+
+    .contact_frame02 {
+        @include g.mq('md') {
+            padding: 50px 57px 50px 57px;
+        }
+
+        .contact_frame_list {
+            margin-bottom: 20px;
+            padding-bottom: 25px;
+            border-bottom: solid 1px #E6EBEF;
+
+            @include g.mq('md') {
+                padding-bottom: 38px;
+                margin-bottom: 43px;
+            }
+        }
+
+        .contact_frame_txt {
+            @include g.mq('md') {
+                margin: 0 43px 0 0;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .contact_frame_txts {
+            .txt_tel {
+                @include g.mq('md') {
+                    margin: 0 23px 0 0;
+                }
+            }
+        }
+    }
+
+    &_intro_recording {
+        .ttl {
+            @include g.fonts(0, 16, bold, 37, 0, #9BA6AF);
+            font-size: g.rem(14);
+
+            @include g.mq('md') {
+                font-size: g.rem(16)
+            }
+        }
+
+        .desc {
+            @include g.fonts(0, 16, 400, 32, 0, #9BA6AF);
+            font-size: g.rem(14);
+
+            @include g.mq('md') {
+                font-size: g.rem(16);
+                padding-right: 15px;
+            }
+        }
+    }
+}

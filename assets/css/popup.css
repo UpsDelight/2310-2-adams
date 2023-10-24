@@ -1,0 +1,211 @@
+/*!
+global > color
+------------------------------
+*/
+/*!
+global > content-width
+------------------------------
+*/
+/*!
+global > font
+------------------------------
+*/
+.layr_popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 250697;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.layr_popup.open {
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 300ms ease, opacity 200ms linear 100ms;
+}
+.layr_popup > .inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.layr_popup_mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+.layr_popup_wrap {
+  width: 430px;
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.layr_popup_item {
+  --primary-color: #3CA629;
+  position: relative;
+}
+.layr_popup_item.color_green {
+  --primary-color: #3CA629;
+}
+.layr_popup_item.color_orange {
+  --primary-color: #B78929;
+}
+.layr_popup_close {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  border: 2px solid #A2A2A2;
+  background-color: #A2A2A2;
+  border-radius: 99px;
+  transform: translate(50%, -50%);
+  transition: 150ms ease-out;
+}
+@media screen and (min-width: 768px) {
+  .layr_popup_close {
+    right: 0;
+  }
+}
+.layr_popup_close::before, .layr_popup_close::after {
+  content: "";
+  width: 14px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #FFF;
+  transition: inherit;
+}
+.layr_popup_close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.layr_popup_close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+@media screen and (min-width: 768px) {
+  .layr_popup_close {
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+  }
+  .layr_popup_close::after, .layr_popup_close::before {
+    width: 19px;
+  }
+  .layr_popup_close:hover {
+    background-color: #FFF;
+  }
+  .layr_popup_close:hover::after, .layr_popup_close:hover::before {
+    background-color: #A2A2A2;
+  }
+}
+.layr_popup .overflow {
+  height: 100%;
+  max-height: calc(100vh - 60px);
+  overflow: auto;
+  background-color: #FBF9F5;
+}
+.layr_popup_content {
+  padding: 30px 15px;
+}
+@media screen and (min-width: 768px) {
+  .layr_popup_content {
+    padding: 38px 49px 58px 49px;
+  }
+}
+.layr_popup_image {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.layr_popup_title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+.layr_popup_text {
+  color: #44474E;
+  line-height: 2;
+}
+.layr_popup_more {
+  width: 206px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #2C68C9;
+  color: #FFF;
+  background-color: #2C68C9;
+  font-weight: 700;
+  border-radius: 99px;
+  position: relative;
+}
+.layr_popup_more::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  top: 50%;
+  right: 12px;
+  border: 0;
+  border-top: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+@media screen and (min-width: 768px) {
+  .layr_popup_more {
+    transition: 150ms ease-out;
+  }
+  .layr_popup_more:hover {
+    color: #2C68C9;
+    background-color: #FFF;
+  }
+  .layr_popup_more:hover::after {
+    border-color: #2C68C9;
+  }
+}
+.layr_popup_item.color_orange .layr_popup_more {
+  border: 2px solid #B9A060;
+  color: #FFF;
+  background-color: #B9A060;
+}
+@media screen and (min-width: 768px) {
+  .layr_popup_item.color_orange .layr_popup_more:hover {
+    color: #B9A060;
+    background-color: #fff;
+  }
+  .layr_popup_item.color_orange .layr_popup_more:hover::after {
+    border-color: #B9A060;
+  }
+}
+.layr_popup_item.color_green .layr_popup_more {
+  border: 2px solid #54AB36;
+  color: #FFF;
+  background-color: #54AB36;
+}
+@media screen and (min-width: 768px) {
+  .layr_popup_item.color_green .layr_popup_more:hover {
+    color: #54AB36;
+    background-color: #fff;
+  }
+  .layr_popup_item.color_green .layr_popup_more:hover::after {
+    border-color: #54AB36;
+  }
+}
+
+/*# sourceMappingURL=popup.css.map */

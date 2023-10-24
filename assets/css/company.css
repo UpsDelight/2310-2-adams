@@ -1,0 +1,150 @@
+/*!
+global > color
+------------------------------
+*/
+/*!
+global > content-width
+------------------------------
+*/
+/*!
+global > font
+------------------------------
+*/
+.company_lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.company_lists .item {
+  width: calc(50% - 20px);
+  height: 250px;
+  margin-bottom: 30px;
+  padding-left: 52px;
+  display: flex;
+  align-items: center;
+  background-color: #F6FAFB;
+  position: relative;
+}
+.company_lists .item .icon {
+  width: 115px;
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  border-radius: 50%;
+  background-color: #00ADC6;
+  transition: all 150ms linear;
+}
+.company_lists .item .icon img {
+  width: 50px;
+  height: auto;
+  display: block;
+}
+.company_lists .item .en {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #00ADC6;
+  font-size: 1.25rem;
+}
+.company_lists .item .jp {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.8;
+  color: #44474E;
+  font-size: 1.5625rem;
+}
+.company_lists .item .arrow_left {
+  width: 76px;
+  height: 76px;
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 1px solid #00B0CA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 150ms linear;
+}
+.company_lists .item .arrow_left img {
+  width: 20px;
+  height: auto;
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  .company_lists .item:hover .arrow_left {
+    transform: translate(10%, -50%);
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .company_lists .item {
+    height: auto;
+    padding: 50px 20px;
+  }
+  .company_lists .item .icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 30px;
+  }
+  .company_lists .item .icon img {
+    width: 30px;
+  }
+  .company_lists .item .en {
+    font-size: 1rem;
+  }
+  .company_lists .item .jp {
+    font-size: 1.25rem;
+  }
+  .company_lists .item .arrow_left {
+    width: 50px;
+    height: 50px;
+    right: 20px;
+  }
+  .company_lists .item .arrow_left img {
+    width: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .company_lists {
+    display: block;
+    margin-top: 16vw;
+  }
+  .company_lists .item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8vw;
+    padding: 5.3333333333vw;
+  }
+  .company_lists .item .icon {
+    width: 18.6666666667vw;
+    height: 18.6666666667vw;
+    margin-right: 4vw;
+  }
+  .company_lists .item .icon img {
+    width: 8vw;
+  }
+  .company_lists .item .en {
+    font-size: 4.2666666667vw;
+  }
+  .company_lists .item .jp {
+    font-size: 4.8vw;
+    line-height: 1.6;
+  }
+  .company_lists .item .arrow_left {
+    width: 10.6666666667vw;
+    height: 10.6666666667vw;
+    right: 2.6666666667vw;
+  }
+  .company_lists .item .arrow_left img {
+    width: 20px;
+  }
+}
+
+/*# sourceMappingURL=company.css.map */

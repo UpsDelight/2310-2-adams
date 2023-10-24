@@ -1,0 +1,37 @@
+@use "../../../global"as g;
+
+.location {
+    margin-top: 95px;
+
+    .c_low_ttl02 {
+        margin-top: 43px;
+        margin-bottom: 16px;
+    }
+
+    .map_img {
+        margin-top: 21px;
+    }
+}
+
+.phone_underline {}
+
+@include g.screen_max(767px) {
+    .location {
+        margin-top: 40px;
+
+        .c_low_ttl02 {
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+
+        .map_img {
+            margin-top: 20px;
+        }
+    }
+
+    .phone_underline {
+        color: #00ADC6;
+        text-decoration: underline 1px solid #00ADC6;
+    }
+
+}

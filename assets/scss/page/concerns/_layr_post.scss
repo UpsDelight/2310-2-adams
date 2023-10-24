@@ -1,0 +1,42 @@
+@use '../../global'as *;
+
+.layr_post {
+    width: 100%;
+    background-color: var(--post-background);
+    border-radius: 10px;
+    padding: 20px 15px;
+
+    @include mq('md') {
+        padding: 25px;
+    }
+
+    @include mq('xl') {
+        padding: 25px 60px 15px 30px;
+    }
+
+    &_title {
+        font-size: rem(16);
+        color: var(--concerns-primary-color);
+        font-weight: 700;
+        line-height: 1.6;
+        margin-bottom: 8px;
+
+        @include mq('md') {
+            font-size: rem(20);
+        }
+    }
+
+    &_text {
+        line-height: 1.6;
+        margin-bottom: 19px;
+    }
+
+    .text_left_border {
+        border-left: 3px solid var(--concerns-primary-color);
+        line-height: 1.6;
+        padding-left: 7px;
+
+        margin-top: 10px;
+        margin-bottom: 13px;
+    }
+}

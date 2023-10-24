@@ -1,0 +1,55 @@
+@use 'sass:math';
+//! ---> global > mixin
+
+// @mixin font-en {
+//     font-family: "Objective", sans-serif;
+//     font-style: italic;
+//     font-weight: bold;
+// }
+
+@mixin screen_max($bp) {
+    @media only screen and (max-width: $bp) {
+        @content;
+    }
+}
+
+@mixin screen_min($bp) {
+    @media only screen and (min-width: $bp) {
+        @content;
+    }
+}
+
+@mixin pchover {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mecay {
+    @media only screen and (min-width: 768px) and (max-width: 1600px) {
+        @content;
+    }
+}
+
+//! ---> fonts (font-family, font-size, font-weight, line height, leterspacing)
+@mixin fonts($font_family:0, $font_size, $font_weight, $line_height, $lett : 0, $color: '') {
+    @if ($font_family !=0) {
+        font-family: $font_family;
+    }
+
+    font-size: #{$font_size * 0.1rem};
+
+    @if ($font_weight !=0) {
+        font-weight: $font_weight;
+    }
+
+    line-height: math.div($line_height, $font_size);
+
+    @if($lett !=0) {
+        letter-spacing: #{$lett * 0.001em};
+    }
+
+    @if($color !='') {
+        color: $color;
+    }
+}

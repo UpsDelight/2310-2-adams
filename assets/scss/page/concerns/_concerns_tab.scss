@@ -1,0 +1,53 @@
+@use '../../global'as *;
+
+.concerns_tab {
+    --inner-background: #2C68C9;
+    --post-background: #FDFDFD;
+
+    --concerns-primary-color: #2C68C9;
+    margin-top: 38px;
+
+    &.color_1 {
+        --inner-background: #2C68C9;
+        --post-background: #FDFDFD;
+    }
+
+    &_button {
+        display: flex;
+        justify-content: space-between;
+
+        >.item {
+            width: 50%;
+            height: 40px;
+
+            color: #999;
+            background-color: #E6EBEF;
+
+            font-size: rem(16);
+            font-weight: 700;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            transition: 150ms ease-out;
+
+            cursor: pointer;
+
+            &:hover,
+            &.active {
+                color: #FFF;
+                background-color: var(--inner-background);
+            }
+
+            @include mq() {
+                width: calc(50% - 2px);
+                height: 60px;
+
+                font-size: rem(20);
+            }
+        }
+    }
+
+    &_content {}
+}

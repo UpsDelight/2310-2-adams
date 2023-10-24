@@ -1,0 +1,594 @@
+@use "../../../global"as g;
+
+//! ---> Three Characteristics
+.once_upon_a_time {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 174px;
+}
+
+.there_was_a_dear_little_girl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.who_was_loved_by_every_one {
+    padding-top: 178px;
+    padding-left: g.vw(69);
+    padding-bottom: 220px;
+}
+
+.who_looked_at_her {
+    width: 463px;
+    position: relative;
+}
+
+.but_most_of_all_by_her_grandmother {
+    width: 100%;
+    position: relative;
+
+    title-ic-rounded {
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+        @include g.fonts(0, 35, 700, 54, 0, #44474E);
+        font-size: g.rem(35);
+    }
+}
+
+.and_there_was_nothing {
+    position: absolute;
+    display: flex;
+
+    .l {
+        width: 116px;
+    }
+
+    .r {
+        width: 316px;
+        margin-left: 35px;
+    }
+
+    i-circle {
+        display: block;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 40px;
+            height: 2px;
+
+            background-color: #4D4D4D;
+
+            position: absolute;
+        }
+    }
+
+    i-title {
+        @include g.fonts(0, 20, 700, 30, 0, "");
+        font-size: g.rem(20);
+
+        display: block;
+    }
+
+    i-desc {
+        @include g.fonts(0, 14, 400, 25, 0, #44474E);
+        font-size: g.rem(14);
+
+        margin-top: 10px;
+        display: block;
+    }
+
+    &.color3 {
+        top: -109px;
+        left: 329px;
+
+        i-circle {
+
+            &::after {
+                top: 108%;
+                left: 35%;
+                transform: translate(-100%, -100%) rotate(-60deg);
+            }
+        }
+
+        i-title {
+            color: #FDAE48;
+        }
+    }
+
+    &.color2 {
+        top: 169px;
+        left: 489px;
+
+        i-circle {
+
+            &::after {
+                top: 50%;
+                left: 0;
+                transform: translateX(-100%);
+            }
+        }
+
+        i-title {
+            color: #48A5D9;
+        }
+    }
+
+    &.color1 {
+        top: 446px;
+        left: 329px;
+
+        i-circle {
+
+            &::after {
+                top: -8%;
+                left: 35%;
+                transform: translate(-100%, -100%) rotate(60deg);
+            }
+        }
+
+        i-title {
+            color: #9FC150;
+        }
+    }
+}
+
+//! ---> Communications Services
+.one_day_her_mother_said_to_her {
+    padding-top: 28px;
+    padding-bottom: 195px;
+    position: relative;
+
+    background-color: #fbfbfb;
+
+    i-background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translateY(-100%);
+    }
+
+    .c_low_intro_title {
+        margin-bottom: 118px;
+    }
+
+    .block_wrap_title {
+        margin-bottom: 22px;
+
+        &+.text_lead {
+            margin-top: 47px;
+        }
+    }
+
+    .text_desc {
+        margin-bottom: 30px;
+
+        &+.block_wrap_title {
+            margin-top: 94px;
+        }
+    }
+
+    .text_lead {
+        margin-bottom: 35px;
+    }
+}
+
+.come_little_red_riding_hood {
+    padding-top: 52px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.here_is_a_piece_of_cake_and_a_bottle_of_wine {
+    width: calc(33.33% - 20px);
+    display: block;
+    position: relative;
+
+    padding-top: 56px;
+    padding-bottom: 50px;
+
+    text-align: center;
+
+    i-icon-image {
+        width: 76px;
+        height: 90px;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    i-title {
+        @include g.fonts(0, 28, 700, 28*1.6, 0, #FFF);
+        font-size: g.rem(28);
+        display: block;
+    }
+
+    i-desc {
+        @include g.fonts(0, 18, 700, 32, 0, #FFF);
+        font-size: g.rem(18);
+        margin-top: 15px;
+
+        display: block;
+    }
+
+    i-icon-arrow {
+        width: 20px;
+        height: 20px;
+
+        position: absolute;
+        z-index: 1;
+        bottom: 5px;
+        right: 5px;
+
+        transform: rotate(45deg);
+    }
+}
+
+//! ---> Strength Of Communication
+.take_them_to_your_grandmother {
+    background-color: #1D4156;
+    padding-top: 95px;
+    padding-bottom: 98px;
+}
+
+.she_is_ill_and_weak {
+    margin-top: -3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.and_they_will_do_her_good {
+    width: calc(33.33% - 27px);
+
+    i-desc {
+        @include g.fonts(0, 16, 400, 28, 0, #FFF);
+        font-size: g.rem(16);
+        display: block;
+    }
+}
+
+.set_out_before_it_gets_hot {
+    position: relative;
+    margin-bottom: 28px;
+
+    i-order {
+        width: 192px;
+        height: 165px;
+
+        position: absolute;
+        z-index: 1;
+        top: -1px;
+        left: -1px;
+
+        padding-top: 9px;
+        padding-left: 17px;
+        overflow: hidden;
+
+        font-family: g.$f_montserrat;
+        color: #FFF;
+        line-height: 1.2;
+        font-weight: 700;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            background-color: #1D4156;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    i-tag {
+        font-size: g.rem(14);
+        display: block;
+    }
+
+    i-num {
+        font-size: g.rem(25);
+    }
+
+}
+
+@include g.screen_min(1601px) {
+    .who_was_loved_by_every_one {
+        padding-left: 69px;
+    }
+}
+
+@include g.screen_max(1024px) {
+
+    .who_was_loved_by_every_one {
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow: auto;
+
+        .md_scroll {
+            width: 820px;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .who_looked_at_her {
+        width: 360px;
+    }
+
+    .but_most_of_all_by_her_grandmother {
+        title-ic-rounded {
+            font-size: g.rem(24);
+        }
+    }
+
+    .and_there_was_nothing {
+        .l {
+            width: 80px;
+        }
+
+        .r {
+            width: 316px;
+            margin-left: 15px;
+        }
+
+        &.color3 {
+            top: -78px;
+            left: 266px;
+        }
+
+        &.color2 {
+            top: 136px;
+            left: 390px;
+        }
+
+        &.color1 {
+            top: 353px;
+            left: 266px;
+        }
+    }
+
+    .come_little_red_riding_hood {
+        flex-wrap: wrap;
+    }
+
+    .here_is_a_piece_of_cake_and_a_bottle_of_wine {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .she_is_ill_and_weak {
+        flex-wrap: wrap;
+    }
+
+    .and_they_will_do_her_good {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@include g.screen_max(767px) {
+    .mv_low_ttl.c_white {
+
+        .ttl_en,
+        .ttl_jp {
+            color: #44474E;
+        }
+    }
+
+    //! ---> Three Characteristics
+    .once_upon_a_time {
+        padding-bottom: 80px;
+    }
+
+    .who_was_loved_by_every_one {
+        margin-left: -20px;
+        padding-top: 110px;
+        padding-left: 0;
+        padding-bottom: 321px;
+
+        overflow: visible;
+
+        .md_scroll {
+            width: 100%;
+        }
+    }
+
+    .who_looked_at_her {
+        width: 232px;
+        // width: g.vw(232, 320);
+        transform: translateX(-62%);
+    }
+
+    .but_most_of_all_by_her_grandmother {
+        width: 100%;
+        position: relative;
+
+        title-ic-rounded {
+            display: none;
+        }
+    }
+
+    .and_there_was_nothing {
+        position: absolute;
+        display: flex;
+
+        .l {
+            width: 58px;
+        }
+
+        .r {
+            // width: 196px;
+            // width: g.vw(196, 320);
+            width: g.vw(220, 375);
+            margin-left: 14px;
+        }
+
+        i-title {
+            font-size: g.rem(18);
+            line-height: 1.55;
+            margin-top: g.vw(10, 320);
+        }
+
+        i-desc {
+            font-size: g.rem(12);
+            line-height: 1.5;
+        }
+
+        &.color3 {
+            top: -100px;
+            left: 165px;
+
+            i-circle {
+
+                &::after {
+                    width: 57px;
+                    top: 85px;
+                    left: 43px;
+                    transform: translate(-100%, -100%) rotate(-70deg);
+                }
+            }
+        }
+
+        &.color2 {
+            top: 84px;
+            left: 246px;
+
+            display: block;
+
+            .r {
+                margin-top: 9px;
+                margin-left: 0;
+            }
+
+            i-circle {
+
+                &::after {
+                    width: 20px;
+                }
+            }
+        }
+
+        &.color1 {
+            top: 317px;
+            left: 165px;
+
+            display: block;
+
+            .r {
+                // width: 268px;
+                width: g.vw(268, 320);
+                margin-top: 9px;
+                margin-left: 0;
+            }
+
+            i-circle {
+
+                &::after {
+                    width: 112px;
+                    top: -50px;
+                    left: 68px;
+                    transform: translate(-100%, -100%) rotate(80deg);
+                }
+            }
+        }
+    }
+
+    //! ---> Communications Services
+    .one_day_her_mother_said_to_her {
+        padding-bottom: 60px;
+
+        .c_low_intro_title {
+            margin-bottom: 40px;
+        }
+
+        .text_desc {
+            &+.block_wrap_title {
+                margin-top: 40px;
+            }
+        }
+
+        .text_lead {
+            margin-bottom: 10px;
+        }
+    }
+
+    .come_little_red_riding_hood {
+        display: block;
+    }
+
+    .here_is_a_piece_of_cake_and_a_bottle_of_wine {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        i-icon-image {
+            width: 40px;
+            height: 50px;
+        }
+
+        i-title {
+            font-size: g.rem(22);
+        }
+
+        i-desc {
+            font-size: g.rem(16);
+            margin-top: 0;
+        }
+    }
+
+    //! ---> Strength Of Communication
+    .take_them_to_your_grandmother {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .she_is_ill_and_weak {
+        display: block;
+
+        margin-top: 40px;
+    }
+
+    .and_they_will_do_her_good {
+        width: 100%;
+    }
+}
+
+@include g.screen_max(420px) {
+
+    .and_there_was_nothing {
+        i-title {
+            font-size: g.rem(16);
+        }
+    }
+}

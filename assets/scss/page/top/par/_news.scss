@@ -1,0 +1,231 @@
+@use "../../../global"as g;
+
+.news {
+    position: relative;
+    background-color: #F7F7F7;
+
+    &_bi {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        width: 100%;
+        height: g.vw(80);
+
+        transform: translateY(-100%);
+
+        img {}
+    }
+
+    .container {
+        padding-top: g.vw(200);
+        padding-bottom: g.vw(130);
+    }
+
+    .c_low_ttl02 {
+        &::before {
+            border-color: #00ADC6;
+            background-color: #00ADC6;
+        }
+    }
+
+    &_container {
+        display: flex;
+        $new_left_width: 334;
+
+        .l {
+            width: g.vw($new_left_width);
+        }
+
+        .r {
+            width: calc(100% - g.vw($new_left_width));
+        }
+    }
+
+    &_lists {
+        margin-top: 10px;
+
+        .item {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+
+            padding-top: g.vw(10);
+            padding-bottom: g.vw(8);
+
+            border-bottom: 1px solid #CFD5E2;
+
+            padding-right: 40px;
+
+            position: relative;
+
+            icon-image {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+
+                transition: all 300ms linear;
+
+                img {
+                    width: 20px;
+                }
+            }
+
+            @include g.pchover {
+                &:hover {
+                    icon-image {
+                        transform: translate(25%, -50%)
+                    }
+                }
+            }
+        }
+    }
+
+    &_time {
+        min-width: g.vw(116);
+        @include g.fonts(g.$f_montserrat, 16, 500, 16, 0, #9BA6AF);
+        font-size: g.vw(16);
+    }
+
+    &_tag {
+        min-width: g.vw(100);
+        flex-shrink: 0;
+        padding: 3px 18px;
+        margin-right: g.vw(20);
+
+        @include g.fonts(0, 16, 700, 32, 0, #9BA6AF);
+        font-size: g.vw(16);
+
+        border-radius: 999px;
+        border: 1px solid #E6F0F7;
+
+        text-align: center;
+
+        background-color: #F5FAFB;
+    }
+
+    &_detail {}
+
+    .nav_link_inc {
+        margin-top: g.vw(25);
+        text-align: right;
+    }
+}
+
+@include g.screen_min(1601px) {
+    .news {
+
+        &_bi {
+            height: 80px;
+        }
+
+        .container {
+            padding-top: 200px;
+            padding-bottom: 130px;
+        }
+
+        &_container {
+            $new_left_width: 334;
+
+            .l {
+                width: #{$new_left_width}px;
+            }
+
+            .r {
+                width: calc(100% - #{$new_left_width}px);
+            }
+        }
+
+        &_lists {
+            .item {
+                padding-top: 10px;
+                padding-bottom: 8px;
+            }
+        }
+
+        &_time {
+            min-width: 116px;
+            font-size: g.rem(16);
+        }
+
+        &_tag {
+            min-width: g.vw(100);
+
+            padding: 3px 18px;
+            margin-right: 20px;
+            font-size: g.rem(16);
+        }
+    }
+}
+
+@include g.screen_max(1200px) {
+    .news {
+        &_container {
+            flex-wrap: wrap;
+
+            .r,
+            .l {
+                width: 100%;
+            }
+        }
+
+        &_time {
+            min-width: g.vw(116, 1200);
+            font-size: g.vw(16, 1200);
+        }
+
+        &_tag {
+            min-width: g.vw(110, 1200);
+            padding: 0px 10px;
+            font-size: g.vw(16, 1200);
+        }
+
+        &_detail {
+            font-size: g.vw(16, 1200);
+        }
+    }
+}
+
+@include g.screen_max(767px) {
+    .news {
+        .container {
+            padding-top: g.vw(40, 375);
+            padding-bottom: g.vw(40, 375);
+        }
+
+        &_container {
+            display: block;
+        }
+
+        &_lists {
+            .item {
+                display: block;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+        }
+
+        &_time {
+            font-size: g.rem(16);
+        }
+
+        &_tag {
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: g.rem(16);
+        }
+
+        &_detail {
+            font-size: g.rem(16);
+            margin-top: 5px;
+        }
+
+        .nav_link_inc {
+            margin-top: 25px;
+            text-align: left;
+        }
+    }
+}

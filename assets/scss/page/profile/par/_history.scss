@@ -1,0 +1,70 @@
+@use "../../../global"as g;
+
+.history {
+    margin-top: 100px;
+
+    .c_low_ttl01 {
+        margin-bottom: 48px;
+    }
+
+    .timeline {
+        height: 84px;
+        display: flex;
+        align-items: center;
+
+        background-color: #F5FAFB;
+
+        margin-bottom: 10px;
+        padding: 28px 32px;
+
+        .year {
+            width: 94px;
+            @include g.fonts(g.$f_montserrat, 22, 700, 40, 0, #00ADC6);
+            font-size: g.rem(22);
+        }
+
+        .month {
+            width: 62px;
+            @include g.fonts(g.$f_montserrat, 20, 700, 30, 0, #9BA6AF);
+            font-size: g.rem(20);
+        }
+
+        .detail {
+            width: calc(100% - 158px);
+            @include g.fonts(0, 18, 700, 25, 0, #44474E);
+            font-size: g.rem(18);
+        }
+    }
+}
+
+@include g.screen_max(767px) {
+
+    .history {
+        margin-top: 60px;
+
+        .c_low_ttl01 {}
+
+        .timeline {
+            flex-wrap: wrap;
+            height: auto;
+            margin-bottom: 10px;
+            padding: 20px 10px;
+
+            .year {
+                width: 90px;
+                font-size: g.rem(16);
+            }
+
+            .month {
+                width: 60px;
+                font-size: g.rem(16);
+            }
+
+            .detail {
+                width: 290px;
+                font-size: g.rem(14);
+                margin-top: 10px;
+            }
+        }
+    }
+}

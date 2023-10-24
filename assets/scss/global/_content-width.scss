@@ -1,0 +1,16 @@
+@use 'function' as g; 
+/*!
+global > content-width
+------------------------------
+*/
+$width-content: g.vw(1200);
+
+
+%absolute {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+}

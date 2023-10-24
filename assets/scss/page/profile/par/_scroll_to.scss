@@ -1,0 +1,68 @@
+@use "../../../global"as g;
+
+.scroll_to {
+    margin-top: 43px;
+
+    &_section {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .item {
+            width: 200px;
+            height: 70px;
+
+            margin-left: 30px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 30px;
+            padding-right: 30px;
+
+            border-radius: 999px;
+
+            background-color: #F6FAFB;
+
+            .text {
+                @include g.fonts(0, 20, 700, 34, 0, #44474E);
+                font-size: g.rem(20);
+            }
+
+            .icon_arrow_down {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+@include g.screen_max(767px) {
+    .scroll_to {
+        margin-top: 30;
+
+        &_section {
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .item {
+                width: calc(50% - 5px);
+                height: 40px;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-left: 0;
+                margin-bottom: 10px;
+
+                .text {
+                    font-size: g.rem(14);
+                }
+
+                .icon_arrow_down {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+}

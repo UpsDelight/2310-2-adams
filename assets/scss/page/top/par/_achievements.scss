@@ -1,0 +1,232 @@
+@use "../../../global"as g;
+
+.achievements {
+    position: relative;
+
+    &_bi {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        z-index: -1;
+        background-color: #2C4152;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+
+            opacity: 0.3;
+        }
+    }
+
+    .container {
+        padding-top: g.vw(150);
+        padding-bottom: g.vw(190);
+    }
+
+    .c_low_ttl02 {
+
+        .en,
+        .jp {
+            color: #fff;
+        }
+
+        &::before {
+            border-color: #FFF;
+            background-color: #FFF;
+        }
+    }
+
+    &_box {
+        display: flex;
+        justify-content: center;
+
+        margin-top: g.vw(88);
+
+        margin-left: -10px;
+        margin-right: -10px;
+
+        .item {
+            width: calc(33.33% - 20px);
+            min-height: g.vw(314);
+            padding-top: g.vw(36);
+            padding-bottom: g.vw(42);
+
+            margin-left: 10px;
+            margin-right: 10px;
+
+            color: #fff;
+
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+            border-top: 1px solid #FFF;
+            border-bottom: 1px solid #FFF;
+        }
+
+        .tag {
+            @include g.fonts(0, 16, 400, 32, 0, #FFF);
+            font-size: g.vw(16);
+        }
+
+        .lead {
+            @include g.fonts(0, 24, 700, 33, 0, #FFF);
+            font-size: g.vw(24);
+            margin-top: g.vw(18);
+        }
+
+        .note {
+            @include g.fonts(0, 14, 400, 32, 0, #FFF);
+            font-size: g.vw(14);
+            margin-top: g.vw(11);
+        }
+
+        .nav_link_inc {
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .nav_link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: g.vw(16);
+            line-height: 2;
+
+
+            padding-bottom: 3px;
+
+            background-image: linear-gradient(0deg, #FFF 0%, #FFF 100%);
+            background-repeat: no-repeat;
+            background-size: 74% 1px;
+            background-position: 0 87%;
+
+            span-icon {
+                margin-left: 5px;
+                transition: all 300ms linear;
+            }
+
+            @include g.pchover {
+                &:hover {
+                    span-icon {
+                        transform: translateX(25%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include g.screen_min(1601px) {
+
+    .achievements {
+
+        .container {
+            padding-top: 150px;
+            padding-bottom: 190px;
+        }
+
+        &_box {
+            margin-top: 88px;
+
+            .item {
+                width: calc(33.33% - 20px);
+                min-height: 314px;
+
+                padding-top: 36px;
+                padding-bottom: 42px;
+            }
+
+            .lead {
+                margin-top: 18px;
+                font-size: g.rem(24);
+            }
+
+            .note {
+                margin-top: 11px;
+            }
+
+            .nav_link {
+                font-size: g.rem(16);
+            }
+        }
+    }
+}
+
+@include g.screen_max(1200px) {
+
+    .achievements {
+
+        &_box {
+            .tag {
+                font-size: g.vw(16, 1200);
+            }
+
+            .lead {
+                font-size: g.vw(22, 1200);
+            }
+
+            .note {
+                font-size: g.vw(16, 1200);
+            }
+
+            .nav_link {
+                font-size: g.vw(16, 1200);
+            }
+        }
+    }
+
+}
+
+@include g.screen_max(767px) {
+
+    .achievements {
+        .container {
+            padding-top: g.vw(60, 375);
+            padding-bottom: g.vw(60, 375);
+        }
+
+        &_box {
+            flex-wrap: wrap;
+            margin-top: g.vw(20, 375);
+
+            .item {
+                width: 320px;
+                max-width: 100%;
+                min-height: 1px;
+                margin-top: 0;
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+                border-top: 0;
+            }
+
+            .tag {
+                font-size: g.rem(16);
+            }
+
+            .lead {
+                font-size: g.rem(16);
+                margin-top: 20px;
+            }
+
+            .note {
+                font-size: g.rem(12);
+                margin-top: 10px;
+            }
+
+            .nav_link {
+                font-size: g.rem(16);
+            }
+        }
+    }
+
+}
