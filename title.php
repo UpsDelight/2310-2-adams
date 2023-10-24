@@ -164,3 +164,7 @@
     <!--理念・ビジョン-->
     <title>理念・ビジョン｜アダムスコミュニケーション</title>
 <?php endif; ?>
+<?php if (is_page('investigation_monitor')) : ?>
+    <!--調査モニターのご案内-->
+    <title>調査モニターのご案内｜アダムスコミュニケーション</title>
+<?php endif; ?>
