@@ -1,0 +1,280 @@
+@use "../../global" as g;
+
+/* =========================================== */
+/*            Survey Monitor Intro             */
+/* =========================================== */
+.survey-monitor-intro--layout {
+    margin-bottom: g.rem(80);
+    @include g.mq(md) {
+        margin-bottom: g.rem(80 * 0.75);
+    }
+}
+.survey-monitor-intro__title {
+    margin-bottom: g.rem(calc(67 * 0.75));
+    text-align: center;
+    font-size: g.rem(calc(35 * 0.75));
+    font-weight: bold;
+    @include g.mq(md) {
+        margin-bottom: g.rem(67);
+        font-size: g.rem(35);
+    }
+}
+.survey-monitor-intro__wrap {
+    @include g.mq(md) {
+        display: flex;
+        gap: g.rem(38);
+    }
+}
+.survey-monitor-intro__img {
+    width: 100%;
+    @include g.mq(md) {
+        flex-shrink: 0;
+        width: g.rem(336);
+        max-height: g.rem(442);
+    }
+}
+.survey-monitor-intro__img img {
+    width: 100%;
+    aspect-ratio: 336/442;
+}
+
+/* =========================================== */
+/*                   Survey                    */
+/* =========================================== */
+.survey__title-box {
+    display: flex;
+    align-items: center;
+    gap: g.rem(10);
+    @include g.mq(md) {
+        margin-bottom: g.rem(43);
+    }
+}
+.survey__title {
+    font-size: g.rem(calc(35 * 0.75));
+    font-weight: bold;
+    @include g.mq(md) {
+        font-size: g.rem(35);
+    }
+}
+.survey__about {
+    margin-bottom: g.rem(calc(91 * 0.75));
+    @include g.mq(md) {
+        margin-bottom: g.rem(91);
+    }
+}
+.survey__reward {
+    margin-bottom: g.rem(calc(126 * 0.75));
+    @include g.mq(md) {
+        margin-bottom: g.rem(126);
+    }
+}
+/* icon */
+.icon {
+    display: flex;
+    gap: g.rem(6);
+    flex-direction: column;
+}
+.icon__circle {
+    width: g.rem(7);
+    height: g.rem(7);
+    background-color: black;
+    border-radius: 50%;
+
+    &:first-child {
+        background-color: g.$color_brand_1;
+    }
+    &:nth-of-type(2) {
+        background-color: g.$color_brand_3;
+    }
+    &:last-child {
+        background-color: g.$color_brand_2;
+    }
+}
+/* survey-sec-title */
+.survey-sec-title {
+    font-size: g.rem(calc(25 * 0.75));
+    font-weight: bold;
+    @include g.mq(md) {
+        font-size: g.rem(25);
+    }
+}
+.survey-sec-title__num {
+    font-family: g.$f_montserrat;
+    font-size: g.rem(calc(25 * 0.75));
+    font-weight: bold;
+    color: g.$color_brand_1;;
+    margin-right: g.rem(calc(17 * 0.75));
+    @include g.mq(md) {
+        font-size: g.rem(25);
+        margin-right: g.rem(17);
+    }
+}
+
+/* =========================================== */
+/*                Survey About                 */
+/* =========================================== */
+.survey-about__text {
+    @include g.mq(md) {
+        margin-bottom: g.rem(15);
+    }
+}
+.survey-about__items {
+    display: grid;
+    gap: g.rem(calc(52 * 0.75));
+}
+.survey-about-item__dt,
+.survey-about-item__dd {
+    border-bottom: 1px solid g.$color_border_2;
+    border-right: 1px solid g.$color_border_2;
+}
+.survey-about-item__wrap {
+    border: 1px solid g.$color_border_2;
+    padding: g.rem(14) g.rem(30);
+    background-color: g.$color_brand_1;
+    display: flex;
+    align-items: center;
+    gap: g.rem(calc(22 * 0.75));
+    @include g.mq(md) {
+        gap: g.rem(22);
+    }
+}
+.survey-about-item__img {
+    width: g.rem(calc(55 * 0.75));
+    height: g.rem(calc(55 * 0.75));
+    @include g.mq(md) {
+        width: g.rem(55);
+        height: g.rem(55);
+    }
+}
+.survey-about-item__heading {
+    color: #fff;
+    @include g.mq(md) {
+        font-size: g.rem(24);
+    }
+}
+.survey-about-item__dl {
+    border-top: 1px solid g.$color_border_2;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    @include g.mq(md) {
+        text-align: left;
+        grid-template-columns: g.rem(208) 1fr;
+    }
+}
+.survey-about-item__dt {
+    border-left: 1px solid g.$color_border_2;
+    font-size: g.rem(18);
+    font-weight: 500;
+    @include g.mq(md) {
+        padding: g.rem(20) g.rem(29);
+    }
+}
+.survey-about-item__dd {
+    border-left: 1px solid g.$color_border_2;
+    @include g.mq(md) {
+        padding: g.rem(20) g.rem(33) g.rem(21) g.rem(25);
+        border-left: unset;
+    }
+}
+
+/* =========================================== */
+/*                Survey Reward                */
+/* =========================================== */
+.survey-reward__wrap {
+    margin-bottom: g.rem(calc(34 * 0.75));
+    display: grid;
+    gap: g.rem(calc(29 * 0.75));
+    grid-template-columns: 1fr;
+    align-items: center;
+    @include g.mq(md) {
+        margin-bottom: g.rem(34);
+        gap: g.rem(29);
+        grid-template-columns: g.rem(114) 1fr;
+    }
+}
+.survey-reward__img {
+    width: g.rem(114);
+    height: g.rem(114);
+    justify-self: center;
+}
+.survey-reward__img img {
+    aspect-ratio: 1/1;
+}
+.survey-reward__notes {
+    margin-bottom: g.rem(calc(45 * 0.75));
+    padding-left: 1.3em;
+    @include g.mq(md) {
+        margin-bottom: g.rem(45);
+    }
+}
+.survey-reward__note {
+    font-size: g.rem(12);
+    text-indent: -1.3em;
+    @include g.mq(md) {
+        font-size: g.rem(14);
+    }
+}
+/* mgs-accordion */
+.mgs-accordion {
+    background-color: g.$color_bg2;
+    padding: g.rem(42);
+}
+.mgs-accordion__summary {
+    position: relative;
+    font-size: g.rem(calc(25 * 0.75));
+    font-weight: bold;
+    color: g.$color_my_green_stamp;
+    display: block;
+    @include g.mq(md) {
+        cursor: pointer;
+        font-size: g.rem(25);
+    }
+}
+.mgs-accordion__summary::-webkit-details-marker {
+    /* Safariで表示されるデフォルトの三角形アイコンを消します */
+    display: none;
+}
+.mgs-accordion__summary::before,
+.mgs-accordion__summary::after {
+    display: block;
+	content: '';
+	background-color: g.$color_my_green_stamp;
+	position: absolute;
+	width: 23px;
+	height: 2px;
+	top: 50%;
+    right: 0%;
+    transform: translate(50%, -50%);
+}
+.mgs-accordion__summary::before {
+    width: 2px;
+	height: 23px;
+}
+details[open] .mgs-accordion__wrap {
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+.mgs-accordion__wrap {
+    margin-block: g.rem(calc(26 * 0.75));
+    display: flex;
+    @include g.mq(md) {
+        margin-block: g.rem(26);
+    }
+}
+.mgs-accordion__img {
+    width: g.rem(471.05);
+    flex-shrink: 0;
+}
+.mgs-accordion__img img {
+    aspect-ratio: 471.05/320.23;
+}

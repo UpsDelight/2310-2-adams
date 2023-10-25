@@ -121,4 +121,8 @@ if (is_404()) {
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/common_low.css?ver=1.0.1" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/philosophy.css?ver=1.0.1" rel="stylesheet">
 <?php endif; ?>
+<?php if (is_page('survey_monitor')) : ?>
+    <!--調査モニターのご案内-->
+    <link href="<?php echo get_template_directory_uri(); ?>/assets/css/survey_monitor.css?ver=1.0.1" rel="stylesheet">
+<?php endif; ?>
 
