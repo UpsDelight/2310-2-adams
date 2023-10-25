@@ -359,4 +359,49 @@ details[open] .mgs-accordion__wrap {
 
 .mgs-accordion__img img {
   aspect-ratio: 471.05/320.23;
+}
+
+/* =========================================== */
+/*                 Survey FAQ                  */
+/* =========================================== */
+.survey-faq__title {
+  margin-bottom: 1.96875rem;
+}
+@media screen and (min-width: 768px) {
+  .survey-faq__title {
+    margin-bottom: 2.625rem;
+  }
+}
+
+.survey-faq__nav-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+  gap: 1.3125rem 24px;
+}
+
+.survey-faq__nav-item {
+  border: 1px solid #00ADC6;
+}
+
+.survey-faq__nav-item-link {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 0.8125rem 1.5rem;
+}
+
+.survey-faq__nav-item-link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  color: #00ADC6;
+  line-height: 1;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+  transform: translateY(-50%) rotate(135deg);
 }/*# sourceMappingURL=survey_monitor.css.map */

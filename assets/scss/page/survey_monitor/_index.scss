@@ -278,3 +278,41 @@ details[open] .mgs-accordion__wrap {
 .mgs-accordion__img img {
     aspect-ratio: 471.05/320.23;
 }
+/* =========================================== */
+/*                 Survey FAQ                  */
+/* =========================================== */
+.survey-faq__title {
+    margin-bottom: g.rem(calc(42 * 0.75));
+    @include g.mq(md) {
+        margin-bottom: g.rem(42);
+    }
+}
+.survey-faq__nav-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+    gap: g.rem(21) 24px;
+}
+.survey-faq__nav-item {
+    border: 1px solid g.$color_brand_1;
+}
+.survey-faq__nav-item-link {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: g.rem(13) g.rem(24);
+}
+.survey-faq__nav-item-link::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    color: g.$color_brand_1;
+    line-height: 1;
+    width: g.rem(12);
+    height: g.rem(12);
+    border: 2px solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(-50%) rotate(135deg);
+}

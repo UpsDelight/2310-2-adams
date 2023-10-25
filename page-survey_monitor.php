@@ -217,6 +217,31 @@
                     <h3 class="survey-faq__title survey-sec-title">
                         <span class="survey-sec-title__num">3.</span>よくあるご質問
                     </h3>
+                    <nav class="survey-faq__nav" aria-label="navigation-faq">
+                        <?php $faq_nav_items = [
+                            ['id' => 'nav-faq-01', 'text' => '会員登録について'],
+                            ['id' => 'nav-faq-02', 'text' => '会員IDとパスワードについて'],
+                            ['id' => 'nav-faq-03', 'text' => 'アンケートについて'],
+                            ['id' => 'nav-faq-04', 'text' => 'My GreenStampについて'],
+                            ['id' => 'nav-faq-05', 'text' => '友達紹介システムについて'],
+                            ['id' => 'nav-faq-06', 'text' => '退会について'],
+                            ['id' => 'nav-faq-07', 'text' => '個人情報の管理について'],
+                        ] ?>
+                        <ul class="survey-faq__nav-items">
+                            <?php foreach ($faq_nav_items as $faq_nav_item) : ?>
+                                <li class="survey-faq__nav-item">
+                                    <a href="#<?= $faq_nav_item['id'] ?>" class="survey-faq__nav-item-link">
+                                        <?= $faq_nav_item['text']  ?>
+                                    </a>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </nav>
+                    <ul class="survey-faq__groups">
+                        <li class="survey-faq__group">
+                            
+                        </li>
+                    </ul>
                 </div>
             </section>
         </div>
