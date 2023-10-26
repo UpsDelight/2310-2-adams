@@ -273,8 +273,26 @@
                 </a>
             </div>
 
-        <?php elseif (is_archive('result') || is_tax('result') || is_singular('result')) : ?>
+        <?php elseif (is_page('survey_monitor')) : ?>
+            <div class="follow_page_scroll follow_page_scroll_sp">
+                <a href="<?php echo home_url("/resolution_navi/") ?>" class="nav_link customer_problem_solving_navigation left opacity_hover color5">
+                    <span>お客様<br>課題解決ナビ</span>
+                </a>
+                <a href="#about" class="nav_link section_navigation opacity_hover">
+                    <span>アンケートについて</span>
+                </a>
+                <a href="#reward" class="nav_link section_navigation opacity_hover">
+                    <span>謝礼について</span>
+                </a>
+                <a href="#faq" class="nav_link section_navigation opacity_hover">
+                    <span>よくあるご質問</span>
+                </a>
+                <a href="#monrle" class="nav_link section_navigation opacity_hover">
+                    <span>モニター登録</span>
+                </a>
+            </div>
 
+        <?php elseif (is_archive('result') || is_tax('result') || is_singular('result')) : ?>
             <div class="follow_page_scroll follow_page_scroll_sp">
                 <a target="_blank" rel="noopener noreferrer" href="<?php echo home_url("/lp-cssurveys/"); ?>" class="nav_link customer_problem_solving_navigation opacity_hover none_active none_active">
                     <span>顧客満足度調査の<br>資料ダウンロード</span>

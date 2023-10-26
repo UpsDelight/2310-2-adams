@@ -70,7 +70,7 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
             </div>
 
             <!-- 1. アンケートについて -->
-            <section class="survey__about survey-about">
+            <section id="about" class="survey__about survey-about">
                 <div class="survey-about__inner">
                     <h3 class="survey-about__title survey-sec-title">
                         <span class="survey-sec-title__num">1.</span>アンケートについて
@@ -164,7 +164,7 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
             </section>
 
             <!-- 2. アンケートの謝礼について -->
-            <section class="survey__reward survey-reward">
+            <section id="reward" class="survey__reward survey-reward">
                 <div class="survey-reward__inner">
                     <h3 class="survey-reward__title survey-sec-title">
                         <span class="survey-sec-title__num">2.</span>アンケートの謝礼について
@@ -227,7 +227,7 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
             </section>
 
             <!-- 3. よくあるご質問 -->
-            <section class="survey__faq survey-faq">
+            <section id="faq" class="survey__faq survey-faq">
                 <div class="survey-faq__inner">
                     <h3 class="survey-faq__title survey-sec-title">
                         <span class="survey-sec-title__num">3.</span>よくあるご質問
@@ -350,7 +350,7 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
             </section>
 
             <!-- 4. アダムスモニターパネル規約 -->
-            <section class="survey__monrle survey-monrle">
+            <section id="monrle" class="survey__monrle survey-monrle">
                 <div class="survey-monrle__inner">
                     <h3 class="survey-monrle__title survey-sec-title">
                         <span class="survey-sec-title__num">4.</span>アダムスモニターパネル規約

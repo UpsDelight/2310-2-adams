@@ -236,7 +236,14 @@ icon-image {
                 color: #00ADC6;
             }
         }
- 
+        &.color5 {
+            &.none_active {
+                border-color: #DEDEDE!important;
+                background-color: #FFFFFF!important;
+                color: #00ADC6;
+
+            }
+        }
     }
     &_sp.follow_page_scroll{
         display: inherit;
@@ -254,6 +261,15 @@ icon-image {
                 height: 80px;
                 padding: 0 10px;
                 font-size: g.rem(16);
+            }
+            &.left {
+                justify-content: left;
+                text-align: left;
+                padding-inline: 8px;
+                @include g.mq(md) {
+                    margin-bottom: 10px;
+                    padding-inline: 15px;
+                }
             }
         }
     }
@@ -300,6 +316,46 @@ icon-image {
             &.none_active {
                 border-color: #C4AB62;
                 background-color: #C4AB62;
+            }
+        }
+    }
+    .section_navigation {
+        position: relative;
+        display: inherit;
+        width:135px;
+        margin-bottom: 2px;
+        padding:3px 8px;
+        font-size: g.rem(12);
+        text-align: left;
+        justify-content: left;
+        background-color: #fff;
+        border: 1px solid #DEDEDE;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        @include g.mq('md'){
+            width: 210px;
+            margin-bottom: 10px;
+            padding: 6.5px 10px;
+            font-size: g.rem(16);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 47%;
+            right: 6px;
+            color: g.$color_brand_1;
+            line-height: 1;
+            width: g.rem(7);
+            height: g.rem(7);
+            border: 2px solid currentColor;
+            border-left: 0;
+            border-bottom: 0;
+            box-sizing: border-box;
+            transform: translateY(-50%) rotate(135deg);
+            @include g.mq(md) {
+                right: 16px;
+                width: g.rem(10);
+                height: g.rem(10);
             }
         }
     }
