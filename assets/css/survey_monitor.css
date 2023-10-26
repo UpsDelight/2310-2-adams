@@ -11,6 +11,14 @@ global > content-width
 global > font
 ------------------------------
 */
+html {
+  scroll-behavior: smooth;
+}
+
+.wbr {
+  display: inline-block;
+}
+
 /* =========================================== */
 /*            Survey Monitor Intro             */
 /* =========================================== */
@@ -373,6 +381,15 @@ details[open] .mgs-accordion__wrap {
   }
 }
 
+.survey-faq__nav {
+  margin-bottom: 2.4375rem;
+}
+@media screen and (min-width: 768px) {
+  .survey-faq__nav {
+    margin-bottom: 3.25rem;
+  }
+}
+
 .survey-faq__nav-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
@@ -404,4 +421,150 @@ details[open] .mgs-accordion__wrap {
   border-bottom: 0;
   box-sizing: border-box;
   transform: translateY(-50%) rotate(135deg);
+}
+
+.survey-faq__group:not(:last-child) {
+  margin-bottom: 2.765625rem;
+}
+@media screen and (min-width: 768px) {
+  .survey-faq__group:not(:last-child) {
+    margin-bottom: 3.6875rem;
+  }
+}
+
+/* faq-group */
+.faq-group__heading {
+  margin-bottom: 0.703125rem;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #00ADC6;
+}
+@media screen and (min-width: 768px) {
+  .faq-group__heading {
+    margin-bottom: 0.9375rem;
+    font-size: 1.5rem;
+  }
+}
+
+.faq-group__accordion {
+  background-color: #F5FAFB;
+}
+.faq-group__accordion:not(:last-child) {
+  margin-bottom: 0.796875rem;
+}
+@media screen and (min-width: 768px) {
+  .faq-group__accordion:not(:last-child) {
+    margin-bottom: 1.0625rem;
+  }
+}
+
+.faq-group__summary {
+  position: relative;
+  font-size: 1.171875rem;
+  font-weight: bold;
+  display: block;
+  border-bottom: 1px solid #fff;
+}
+@media screen and (min-width: 768px) {
+  .faq-group__summary {
+    cursor: pointer;
+    font-size: 1.5625rem;
+  }
+}
+
+.faq-group__summary::-webkit-details-marker {
+  /* Safariで表示されるデフォルトの三角形アイコンを消します */
+  display: none;
+}
+
+.faq-group__wrap {
+  display: grid;
+  gap: 1.375rem;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+  padding: 0.703125rem 0.9375rem;
+}
+@media screen and (min-width: 768px) {
+  .faq-group__wrap {
+    padding-block: 0.9375rem;
+    padding-inline: 3.125rem 1.875rem;
+  }
+}
+
+.faq-group__q {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.640625rem;
+  font-weight: bold;
+  align-self: start;
+  line-height: 1.5;
+  color: #00ADC6;
+}
+@media screen and (min-width: 768px) {
+  .faq-group__q {
+    font-size: 2.1875rem;
+  }
+}
+
+.faq-group__a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.640625rem;
+  font-weight: bold;
+  align-self: start;
+  line-height: 1.5;
+  color: #9BA6AF;
+}
+@media screen and (min-width: 768px) {
+  .faq-group__a {
+    font-size: 2.1875rem;
+  }
+}
+
+.faq-group__q-text {
+  font-size: 0.84375rem;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .faq-group__q-text {
+    font-size: 1.125rem;
+  }
+}
+
+.faq-group__a-link {
+  color: #00ADC6;
+  text-decoration: underline;
+  text-underline-offset: 0.125rem;
+}
+
+.faq-group__q-toggle {
+  position: relative;
+  display: inline-block;
+  width: 1.4375rem;
+  height: 1.4375rem;
+}
+
+.faq-group__q-toggle::before,
+.faq-group__q-toggle::after {
+  display: block;
+  content: "";
+  background-color: #00ADC6;
+  position: absolute;
+  width: inherit;
+  height: 2px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  transition: 0.3s ease-out;
+}
+
+.faq-group__q-toggle::before {
+  width: 2px;
+  height: inherit;
+}
+
+details[open] .faq-group__q-toggle::before {
+  transform: translate(50%, -50%) rotate(90deg);
+}
+
+details[open] .faq-group__q-toggle::after {
+  opacity: 0;
 }/*# sourceMappingURL=survey_monitor.css.map */

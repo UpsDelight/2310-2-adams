@@ -1,5 +1,12 @@
 @use "../../global" as g;
 
+html {
+    scroll-behavior: smooth;
+}
+.wbr {
+    display: inline-block;
+}
+
 /* =========================================== */
 /*            Survey Monitor Intro             */
 /* =========================================== */
@@ -278,6 +285,8 @@ details[open] .mgs-accordion__wrap {
 .mgs-accordion__img img {
     aspect-ratio: 471.05/320.23;
 }
+
+
 /* =========================================== */
 /*                 Survey FAQ                  */
 /* =========================================== */
@@ -285,6 +294,12 @@ details[open] .mgs-accordion__wrap {
     margin-bottom: g.rem(calc(42 * 0.75));
     @include g.mq(md) {
         margin-bottom: g.rem(42);
+    }
+}
+.survey-faq__nav {
+    margin-bottom: g.rem(calc(52 * 0.75));
+    @include g.mq(md) {
+        margin-bottom: g.rem(52);
     }
 }
 .survey-faq__nav-items {
@@ -315,4 +330,117 @@ details[open] .mgs-accordion__wrap {
     border-bottom: 0;
     box-sizing: border-box;
     transform: translateY(-50%) rotate(135deg);
+}
+.survey-faq__group:not(:last-child) {
+    margin-bottom: g.rem(calc(59 * 0.75));
+    @include g.mq(md) {
+        margin-bottom: g.rem(59);
+    }
+}
+
+/* faq-group */
+.faq-group__heading {
+    margin-bottom: g.rem(calc(15 * 0.75));
+    font-weight: 500;
+    font-size: g.rem(calc(24 * 0.75));
+    color: g.$color_brand_1;
+    @include g.mq(md) {
+        margin-bottom: g.rem(15);
+        font-size: g.rem(24);
+    }
+}
+.faq-group__accordion {
+    background-color: g.$color_main;
+
+    &:not(:last-child) {
+        margin-bottom: g.rem(calc(17 * 0.75));
+        @include g.mq(md) {
+            margin-bottom: g.rem(17);
+        }
+    }
+}
+.faq-group__summary {
+    position: relative;
+    font-size: g.rem(calc(25 * 0.75));
+    font-weight: bold;
+    display: block;
+    border-bottom: 1px solid #fff;
+    @include g.mq(md) {
+        cursor: pointer;
+        font-size: g.rem(25);
+    }
+}
+.faq-group__summary::-webkit-details-marker {
+    /* Safariで表示されるデフォルトの三角形アイコンを消します */
+    display: none;
+}
+.faq-group__wrap {
+    display: grid;
+    gap: g.rem(22);
+    grid-template-columns: max-content 1fr max-content;
+    align-items: center;
+    padding: g.rem(calc(15 * 0.75)) g.rem(calc(20 * 0.75));
+    @include g.mq(md) {
+        padding-block: g.rem(15);
+        padding-inline: g.rem(50) g.rem(30);
+    }
+}
+@mixin faq-group__qa {
+    font-family: g.$f_montserrat;
+    font-size: g.rem(calc(35 * 0.75));
+    font-weight: bold;
+    align-self: start;
+    line-height: 1.5;
+    @include g.mq(md) {
+        font-size: g.rem(35);
+    }
+}
+.faq-group__q {
+    @include faq-group__qa;
+    color: g.$color_brand_1;
+}
+.faq-group__a {
+    @include faq-group__qa;
+    color: g.$color_text_light;
+}
+.faq-group__q-text {
+    font-size: g.rem(calc(18 * 0.75));
+    font-weight: 500;
+    @include g.mq(md) {
+        font-size: g.rem(18);
+    }
+}
+.faq-group__a-link {
+    color: g.$color_brand_1;
+    text-decoration: underline;
+    text-underline-offset: g.rem(2);
+}
+.faq-group__q-toggle {
+    position: relative;
+    display: inline-block;
+    width: g.rem(23);
+    height: g.rem(23);
+}
+.faq-group__q-toggle::before,
+.faq-group__q-toggle::after {
+    display: block;
+	content: '';
+	background-color: g.$color_brand_1;
+	position: absolute;
+	width: inherit;
+	height: 2px;
+	top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    transition: .3s ease-out;
+}
+.faq-group__q-toggle::before {
+    width: 2px;
+	height: inherit;
+}
+details[open] .faq-group__q-toggle::before {
+    transform: translate(50%, -50%) rotate(90deg);
+}
+details[open] .faq-group__q-toggle::after {
+    opacity: 0;
 }

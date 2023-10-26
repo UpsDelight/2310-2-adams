@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <!-- ↓↓ main ↓↓ -->
 <main>
     <!-- ↓↓ mv low ↓↓ -->
@@ -219,13 +220,13 @@
                     </h3>
                     <nav class="survey-faq__nav" aria-label="navigation-faq">
                         <?php $faq_nav_items = [
-                            ['id' => 'nav-faq-01', 'text' => '会員登録について'],
-                            ['id' => 'nav-faq-02', 'text' => '会員IDとパスワードについて'],
-                            ['id' => 'nav-faq-03', 'text' => 'アンケートについて'],
-                            ['id' => 'nav-faq-04', 'text' => 'My GreenStampについて'],
-                            ['id' => 'nav-faq-05', 'text' => '友達紹介システムについて'],
-                            ['id' => 'nav-faq-06', 'text' => '退会について'],
-                            ['id' => 'nav-faq-07', 'text' => '個人情報の管理について'],
+                            ['id' => 'nav-faq-00', 'text' => '会員登録について'],
+                            ['id' => 'nav-faq-01', 'text' => '会員IDとパスワードについて'],
+                            ['id' => 'nav-faq-02', 'text' => 'アンケートについて'],
+                            ['id' => 'nav-faq-03', 'text' => 'My GreenStampについて'],
+                            ['id' => 'nav-faq-04', 'text' => '友達紹介システムについて'],
+                            ['id' => 'nav-faq-05', 'text' => '退会について'],
+                            ['id' => 'nav-faq-06', 'text' => '個人情報の管理について'],
                         ] ?>
                         <ul class="survey-faq__nav-items">
                             <?php foreach ($faq_nav_items as $faq_nav_item) : ?>
@@ -237,10 +238,94 @@
                             <?php endforeach; ?>
                         </ul>
                     </nav>
+                    <?php $faq_groups = [
+                        [
+                            'heading' => 'アダムスモニターパネルの会員登録について',
+                            'faq_qa_items' => [
+                                ['question' => '会員登録は無料ですか？', 'answer' => 'はい。無料です。<br>入会金、年会費等も一切ありません。'],
+                                ['question' => '会員になるための条件はありますか？', 'answer' => '株式会社アダムスコミュニケーションが実施するインターネット・電話によるアンケート にご協力いただける、日本国内に住む満15歳以上（中学校卒業以上）の方で、ご自身または同居される家族の方が、広告代理店、市場調査会社、マスコミ関係のいずれにも勤務していないことが条件になります。<br><br>詳しくは、アダムスモニターパネル規約（第三条　入会資格）をご確認ください。'],
+                                ['question' => '会員登録の手続きはどこから始めるのですか？', 'answer' => 'アダムスモニターパネルの会員登録ページより登録してください。<br>⇒ <a class="faq-group__a-link" href="https://www3.aaa.co.jp/monitorpanel/login.aspx" target="_blank">会員登録はこちらから</a>'],
+                                ['question' => '会員登録のプロフィール入力画面で、Eメールアドレスの欄に、フリーメールのアドレスを入力できますか？', 'answer' => 'できます。'],
+                                ['question' => '会員登録のプロフィール入力画面で、Eメールアドレスの欄に、会社や家族など複数の人間で使用している<span class="wbr">Eメールのアドレスを入力できますか？</span>', 'answer' => 'できません。<br>必ず会員登録されるご本人だけが使用しているパソコン用のEメールアドレスを入力してください。'],
+                            ]
+                        ],
+                        [
+                            'heading' => '会員IDとパスワードについて',
+                            'faq_qa_items' => [
+                                ['question' => '会員IDを忘れてしまった場合は、どうすれば良いのですか？', 'answer' => ''],
+                                ['question' => 'パスワードを忘れてしまった場合は、どうすれば良いのですか？', 'answer' => ''],
+                                ['question' => 'パスワードの変更はできますか？', 'answer' => ''],
+                                ['question' => '後からメールアドレスの変更はできますか？', 'answer' => ''],
+                                ['question' => '会員ログインページからログインしようとするとエラーになりますが、どうすれば良いのですか？', 'answer' => ''],
+                            ]
+                        ],
+                        [
+                            'heading' => 'アンケートについて',
+                            'faq_qa_items' => [
+                                ['question' => '', 'answer' => ''],
+                                ['question' => '', 'answer' => ''],
+                                ['question' => '', 'answer' => ''],
+                                ['question' => '', 'answer' => ''],
+                                ['question' => '', 'answer' => ''],
+                            ]
+                        ],
+                        [
+                            'heading' => 'My GreenStampについて',
+                            'faq_qa_items' => [
+                                ['question' => '', 'answer' => ''],
+                                ['question' => '', 'answer' => ''],
+                                ['question' => '', 'answer' => ''],
+                                ['question' => '', 'answer' => ''],
+                                ['question' => '', 'answer' => ''],
+                            ]
+                        ],
+                        [
+                            'heading' => '友達紹介システムについて',
+                            'faq_qa_items' => [
+                                ['question' => '', 'answer' => ''],
+                                ['question' => '', 'answer' => ''],
+                                ['question' => '', 'answer' => ''],
+                                ['question' => '', 'answer' => ''],
+                                ['question' => '', 'answer' => ''],
+                            ]
+                        ],
+                        [
+                            'heading' => 'アダムスモニターパネルからの退会について',
+                            'faq_qa_items' => [
+                                ['question' => '退会したいのですが、どうすれば良いのですか？', 'answer' => '以下の会員ログインページからログインした後に、マイページの中の「会員情報」にアクセスしていただき、ページ中の「退会する」をクリックするとその時点で退会となります。<br>⇒ <a class="faq-group__a-link" href="https://www3.aaa.co.jp/monitorpanel/login.aspx" target="_blank">会員ログインページはこちらから</a>'],
+                            ]
+                        ],
+                        [
+                            'heading' => '個人情報の管理について',
+                            'faq_qa_items' => [
+                                ['question' => '会員登録した際の個人情報やアンケートの回答結果は、安全に管理されていますか？', 'answer' => ''],
+                            ]
+                        ],
+                    ] ?>
                     <ul class="survey-faq__groups">
-                        <li class="survey-faq__group">
-                            
-                        </li>
+                        <?php foreach ($faq_groups as $i => $faq_group) : ?>
+                            <li id="nav-faq-0<?= $i ?>" class="survey-faq__group faq-group">
+                                <h4 class="faq-group__heading">
+                                    <?= $faq_group['heading'] ?>
+                                </h4>
+                                <?php foreach ($faq_group['faq_qa_items'] as $j => $faq_qa_item) : ?>
+                                    <?php $is_open = ($i == 0) && ($j == 0); ?>
+                                    <details class="faq-group__accordion"<?= $is_open ? ' open' : '' ?>>
+                                        <summary class="faq-group__summary">
+                                            <div class="faq-group__wrap">
+                                                <p class="faq-group__q">Q.</p>
+                                                <p class="faq-group__q-text"><?= $faq_qa_item['question'] ?></p>
+                                                <span class="faq-group__q-toggle"></span>
+                                            </div>
+                                        </summary>
+                                        <div class="faq-group__wrap">
+                                            <p class="faq-group__a">A.</p>
+                                            <p class="faq-group__a-text"><?= $faq_qa_item['answer'] ?></p>
+                                        </div>
+                                    </details>
+                                <?php endforeach; ?>
+                            </li>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
             </section>
