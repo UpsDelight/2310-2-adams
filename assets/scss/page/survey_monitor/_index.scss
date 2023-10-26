@@ -12,36 +12,38 @@ html {
 /* =========================================== */
 .survey-monitor-intro--layout {
     margin-top: g.rem(calc(93 * 0.75));
-    margin-bottom: g.rem(80 * 0.75);
+    margin-bottom: g.rem(72 * 0.75);
     @include g.mq(md) {
         margin-top: g.rem(93);
-        margin-bottom: g.rem(80);
+        margin-bottom: g.rem(72);
     }
 }
 .survey-monitor-intro__title {
-    margin-bottom: g.rem(calc(67 * 0.75));
+    margin-bottom: g.rem(calc(53 * 0.75));
     text-align: center;
     font-size: g.rem(calc(35 * 0.65));
     font-weight: bold;
     @include g.mq(md) {
-        margin-bottom: g.rem(67);
+        margin-bottom: g.rem(53);
         font-size: g.rem(35);
     }
 }
 .survey-monitor-intro__wrap {
     display: grid;
-    gap: g.rem(calc(38 * 0.75));
+    gap: g.rem(calc(46 * 0.75));
     @include g.mq(md) {
-        display: flex;
-        gap: g.rem(38);
+        display: grid;
+        gap: g.rem(46);
+        grid-template-columns: 1fr g.rem(336);
+        padding-right: g.rem(7);
     }
 }
 .survey-monitor-intro__img {
     width: 100%;
+    height: max-content;
     @include g.mq(md) {
-        flex-shrink: 0;
         width: g.rem(336);
-        max-height: g.rem(442);
+        margin-top: g.rem(7);
     }
 }
 .survey-monitor-intro__img img {
@@ -59,12 +61,12 @@ html {
     }
 }
 .survey__title-box {
-    margin-bottom: g.rem(calc(43 * 0.75));
+    margin-bottom: g.rem(calc(26 * 0.75));
     display: flex;
     align-items: center;
     gap: g.rem(10);
     @include g.mq(md) {
-        margin-bottom: g.rem(43);
+        margin-bottom: g.rem(26);
     }
 }
 .survey__title {
@@ -75,27 +77,27 @@ html {
     }
 }
 .survey__about {
-    margin-bottom: g.rem(calc(91 * 0.75));
+    margin-bottom: g.rem(calc(86 * 0.75));
     @include g.mq(md) {
-        margin-bottom: g.rem(91);
+        margin-bottom: g.rem(86);
     }
 }
 .survey__reward {
-    margin-bottom: g.rem(calc(126 * 0.75));
+    margin-bottom: g.rem(calc(119 * 0.75));
     @include g.mq(md) {
-        margin-bottom: g.rem(126);
+        margin-bottom: g.rem(119);
     }
 }
 .survey__faq {
-    margin-bottom: g.rem(calc(100 * 0.75));
+    margin-bottom: g.rem(calc(93 * 0.75));
     @include g.mq(md) {
-        margin-bottom: g.rem(100);
+        margin-bottom: g.rem(93);
     }
 }
 .survey__monrle {
-    margin-bottom: g.rem(calc(100 * 0.75));
+    margin-bottom: g.rem(calc(93 * 0.75));
     @include g.mq(md) {
-        margin-bottom: g.rem(100);
+        margin-bottom: g.rem(93);
     }
 }
 
@@ -145,17 +147,20 @@ html {
 /*                Survey About                 */
 /* =========================================== */
 .survey-about__title {
-    margin-bottom: g.rem(calc(11 * 0.75));
+    margin-bottom: g.rem(calc(-3 * 0.75));
     @include g.mq(md) {
-        margin-bottom: g.rem(11);
+        margin-bottom: g.rem(-3);
     }
 }
 .survey-about__text {
-    margin-bottom: g.rem(15);
+    margin-bottom: g.rem(16.5);
 }
 .survey-about__items {
     display: grid;
     gap: g.rem(calc(52 * 0.75));
+    @include g.mq(md) {
+        gap: g.rem(52);
+    }
 }
 .survey-about-item__dt,
 .survey-about-item__dd {
@@ -164,14 +169,14 @@ html {
 }
 .survey-about-item__wrap {
     border: 1px solid g.$color_border_2;
-    padding: g.rem(calc(14 * 0.75)) g.rem(20);
+    padding: g.rem(calc(11.5 * 0.75)) g.rem(20);
     background-color: g.$color_brand_1;
     display: flex;
     align-items: center;
     gap: g.rem(calc(22 * 0.75));
     @include g.mq(md) {
         gap: g.rem(22);
-        padding: g.rem(14) g.rem(30);
+        padding: g.rem(11.5) g.rem(27);
     }
 }
 .survey-about-item__img {
@@ -208,7 +213,7 @@ html {
     font-weight: 500;
     @include g.mq(md) {
         font-size: g.rem(18);
-        padding: g.rem(20) g.rem(29);
+        padding: g.rem(13) g.rem(27);
     }
 }
 .survey-about-item__dd {
@@ -216,8 +221,23 @@ html {
     text-align: left;
     border-left: 1px solid g.$color_border_2;
     @include g.mq(md) {
-        padding: g.rem(20) g.rem(33) g.rem(21) g.rem(25);
+        padding: g.rem(16) g.rem(33) g.rem(23) g.rem(23);
         border-left: unset;
+    }
+}
+.survey-about-item__dd--tel {
+    @extend .survey-about-item__dd;
+    padding-bottom: g.rem(19);
+}
+.survey-about-item__dd--other {
+    @extend .survey-about-item__dd;
+    padding-bottom: g.rem(17);
+}
+.survey-about-item__margin {
+    display: block;
+    margin-block: g.rem(calc(13 * 0.75)) g.rem(calc(8 * 0.75));
+    @include g.mq(md) {
+        margin-block: g.rem(13) g.rem(8);
     }
 }
 
@@ -225,19 +245,19 @@ html {
 /*                Survey Reward                */
 /* =========================================== */
 .survey-reward__title {
-    margin-bottom: g.rem(calc(26 * 0.75));
+    margin-bottom: g.rem(calc(11 * 0.75));
     @include g.mq(md) {
-        margin-bottom: g.rem(26);
+        margin-bottom: g.rem(11);
     }
 }
 .survey-reward__wrap {
-    margin-bottom: g.rem(calc(34 * 0.75));
+    margin-bottom: g.rem(calc(27 * 0.75));
     display: grid;
     gap: g.rem(calc(29 * 0.75));
     grid-template-columns: 1fr;
     align-items: center;
     @include g.mq(md) {
-        margin-bottom: g.rem(34);
+        margin-bottom: g.rem(27);
         gap: g.rem(29);
         grid-template-columns: g.rem(114) 1fr;
     }
@@ -256,15 +276,16 @@ html {
     text-underline-offset: g.rem(2);
 }
 .survey-reward__notes {
-    margin-bottom: g.rem(calc(45 * 0.75));
-    padding-left: 1.3em;
+    margin-bottom: g.rem(calc(44 * 0.75));
+    padding-left: 1.1em;
     @include g.mq(md) {
-        margin-bottom: g.rem(45);
+        margin-bottom: g.rem(44);
     }
 }
 .survey-reward__note {
     font-size: g.rem(12);
-    text-indent: -1.3em;
+    text-indent: -1.4em;
+    line-height: calc(24/14);
     @include g.mq(md) {
         font-size: g.rem(14);
     }
@@ -282,7 +303,8 @@ html {
     padding: g.rem(20);
     line-height: 1.6;
     @include g.mq(md) {
-        padding: g.rem(42);
+        padding-block: g.rem(35) g.rem(44);
+        padding-inline: g.rem(43) g.rem(39);
         line-height: 2;
     }
 }
@@ -332,19 +354,20 @@ details[open] .mgs-accordion__toggle::after {
     opacity: 0;
 }
 .mgs-accordion__wrap {
-    margin-block: g.rem(calc(26 * 0.75));
+    margin-block: g.rem(calc(17 * 0.75));
     @include g.mq(md) {
-        display: flex;
-        margin-block: g.rem(26);
+        // display: flex;
+        margin-block: g.rem(17);
     }
 }
 .mgs-accordion__img {
+    margin-bottom: g.rem(calc(26 * 0.75));
     width: 100%;
-    flex-shrink: 0;
-    margin-top: g.rem(calc(26 * 0.75));
+    height: max-content;
     @include g.mq(md) {
-        width: g.rem(471.05);
-        margin-top: unset;
+        margin: g.rem(-5) g.rem(-28) g.rem(10) g.rem(5);
+        width: g.rem(478);
+        float: right;
     }
 }
 .mgs-accordion__img img {
@@ -356,15 +379,15 @@ details[open] .mgs-accordion__toggle::after {
 /*                 Survey FAQ                  */
 /* =========================================== */
 .survey-faq__title {
-    margin-bottom: g.rem(calc(42 * 0.75));
+    margin-bottom: g.rem(calc(32 * 0.75));
     @include g.mq(md) {
-        margin-bottom: g.rem(42);
+        margin-bottom: g.rem(32);
     }
 }
 .survey-faq__nav {
-    margin-bottom: g.rem(calc(52 * 0.75));
+    margin-bottom: g.rem(calc(46 * 0.75));
     @include g.mq(md) {
-        margin-bottom: g.rem(52);
+        margin-bottom: g.rem(46);
     }
 }
 .survey-faq__nav-items {
@@ -379,17 +402,17 @@ details[open] .mgs-accordion__toggle::after {
     position: relative;
     display: inline-block;
     width: 100%;
-    padding: g.rem(13) g.rem(24);
+    padding: g.rem(8) g.rem(23);
 }
 .survey-faq__nav-item-link::after {
     content: "";
     position: absolute;
-    top: 50%;
-    right: 15px;
+    top: 44%;
+    right: 16px;
     color: g.$color_brand_1;
     line-height: 1;
-    width: g.rem(12);
-    height: g.rem(12);
+    width: g.rem(10);
+    height: g.rem(10);
     border: 2px solid currentColor;
     border-left: 0;
     border-bottom: 0;
@@ -403,20 +426,20 @@ details[open] .mgs-accordion__toggle::after {
     }
 }
 .survey-faq__group:not(:last-child) {
-    margin-bottom: g.rem(calc(59 * 0.75));
+    margin-bottom: g.rem(calc(52 * 0.75));
     @include g.mq(md) {
-        margin-bottom: g.rem(59);
+        margin-bottom: g.rem(52);
     }
 }
 
 /* faq-group */
 .faq-group__heading {
-    margin-bottom: g.rem(calc(15 * 0.75));
+    margin-bottom: g.rem(calc(8 * 0.75));
     font-weight: 500;
     font-size: g.rem(calc(24 * 0.75));
     color: g.$color_brand_1;
     @include g.mq(md) {
-        margin-bottom: g.rem(15);
+        margin-bottom: g.rem(8);
         font-size: g.rem(24);
     }
 }
@@ -424,9 +447,9 @@ details[open] .mgs-accordion__toggle::after {
     background-color: g.$color_main;
 
     &:not(:last-child) {
-        margin-bottom: g.rem(calc(17 * 0.75));
+        margin-bottom: g.rem(calc(18 * 0.75));
         @include g.mq(md) {
-            margin-bottom: g.rem(17);
+            margin-bottom: g.rem(18);
         }
     }
 }
@@ -445,15 +468,26 @@ details[open] .mgs-accordion__toggle::after {
     /* Safariで表示されるデフォルトの三角形アイコンを消します */
     display: none;
 }
-.faq-group__wrap {
+@mixin faq-group__wrap {
     display: grid;
     gap: g.rem(22);
     grid-template-columns: max-content 1fr max-content;
     align-items: center;
     padding: g.rem(calc(15 * 0.75)) g.rem(calc(20 * 0.75));
     @include g.mq(md) {
-        padding-block: g.rem(15);
-        padding-inline: g.rem(50) g.rem(30);
+        padding-inline: g.rem(51) g.rem(30);
+    }
+}
+.faq-group__wrap--q {
+    @include faq-group__wrap;
+    @include g.mq(md) {
+        padding-block: g.rem(15) g.rem(12);
+    }
+}
+.faq-group__wrap--a {
+    @include faq-group__wrap;
+    @include g.mq(md) {
+        padding-block: g.rem(16) g.rem(15);
     }
 }
 @mixin faq-group__qa {
@@ -461,7 +495,7 @@ details[open] .mgs-accordion__toggle::after {
     font-size: g.rem(calc(35 * 0.75));
     font-weight: bold;
     align-self: start;
-    line-height: 1.5;
+    line-height: 1.3;
     @include g.mq(md) {
         font-size: g.rem(35);
     }
@@ -500,7 +534,7 @@ details[open] .mgs-accordion__toggle::after {
 	position: absolute;
 	width: inherit;
 	height: 2px;
-	top: 50%;
+	top: 42%;
     right: 50%;
     transform: translate(50%, -50%);
     transition: .3s ease-out;
@@ -520,19 +554,25 @@ details[open] .faq-group__q-toggle::after {
 /*            Survey Monitor Rule              */
 /* =========================================== */
 .survey-monrle__title {
-    margin-bottom: g.rem(calc(19 * 0.75));
+    margin-bottom: g.rem(calc(9 * 0.75));
     @include g.mq(md) {
-        margin-bottom: g.rem(19);
+        margin-bottom: g.rem(9);
     }
 }
 
 /* =========================================== */
 /*               Survey Privacy                */
 /* =========================================== */
-.survey-privacy__scroll {
-    margin-bottom: g.rem(calc(92 * 0.75));
+.survey-privacy__title {
+    margin-bottom: g.rem(calc(9 * 0.75));
     @include g.mq(md) {
-        margin-bottom: g.rem(92);
+        margin-bottom: g.rem(9);
+    }
+}
+.survey-privacy__scroll {
+    margin-bottom: g.rem(calc(93 * 0.75));
+    @include g.mq(md) {
+        margin-bottom: g.rem(93);
     }
 }
 
@@ -548,22 +588,22 @@ details[open] .faq-group__q-toggle::after {
     @include g.mq(md) {
         height: g.rem(319);
         padding-block: g.rem(42);
-        padding-inline: g.rem(40) g.rem(30);
+        padding-inline: g.rem(38) g.rem(30);
     }
 }
 .scroll__content:not(:last-child) {
-    margin-bottom: g.rem(calc(30 * 0.75));
+    margin-bottom: g.rem(calc(28 * 0.75));
     @include g.mq(md) {
-        margin-bottom: g.rem(30);
+        margin-bottom: g.rem(28);
     }
 }
 .scroll__content-heading {
-    margin-bottom: g.rem(calc(13 * 0.75));
+    margin-bottom: g.rem(calc(11 * 0.75));
     font-size: g.rem(calc(20 * 0.75));
     font-weight: 500;
     line-height: calc(26/20);
     @include g.mq(md) {
-        margin-bottom: g.rem(13);
+        margin-bottom: g.rem(11);
         font-size: g.rem(20);
     }
 }
@@ -573,13 +613,13 @@ details[open] .faq-group__q-toggle::after {
 }
 .scroll__content-item {
     line-height: calc(32/16);
-    padding-left: 1em;
+    padding-left: 1.5em;
     text-indent: -1em;
 }
 .scroll__content-text {
-    margin-bottom: g.rem(calc(34 * 0.75));
+    margin-bottom: g.rem(calc(27 * 0.75));
     @include g.mq(md) {
-        margin-bottom: g.rem(34);
+        margin-bottom: g.rem(27);
     }
 }
 .scroll__content-text--last {

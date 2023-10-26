@@ -103,9 +103,11 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
                                 <dd class="survey-about-item__dd">
                                     アンケートの実施が決定しましたら、事務局より、事前にご登録いただいた会員様のメールアドレスへアンケート実施のメールを送信いたします。<br>
                                     送信されるメールの内容は下記の通りとなっております。<br>
-                                    ・アンケートのテーマや内容<br>
-                                    ・アンケートのサイトのURLアドレス<br>
-                                    ・アンケート回答可能期間、締め切り等について<br>
+                                    <span class="survey-about-item__margin">
+                                        ・アンケートのテーマや内容<br>
+                                        ・アンケートのサイトのURLアドレス<br>
+                                        ・アンケート回答可能期間、締め切り等について<br>
+                                    </span>
                                     アンケートにご協力可能でしたら、アンケート実施のメールを受信後、メールに記載されているURL（アンケートサイト）にアクセスして、アンケートにご回答下さい。<br>
                                     なお、アンケート回答期間中でしたら、アンケートサイトは24時間アクセスが可能です。<br>
                                     会員様のご都合の良いお時間にアクセスしてください。
@@ -125,7 +127,7 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
                                 <dt class="survey-about-item__dt">
                                     アンケートの方法
                                 </dt>
-                                <dd class="survey-about-item__dd">
+                                <dd class="survey-about-item__dd--tel">
                                     電話モニターとしてご登録されている方が対象となります。<br>
                                     直接、当社の電話調査員がお電話して、その時点でご協力可能な場合のみ、アンケートを開始いたします。<br>
                                     事前に調査ご協力確認のためのメールやお電話はいたしません。ご理解をお願いいたします
@@ -133,7 +135,7 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
                                 <dt class="survey-about-item__dt">
                                     実施内容
                                 </dt>
-                                <dd class="survey-about-item__dd">
+                                <dd class="survey-about-item__dd--tel">
                                     当社の電話調査員が、会員様がご登録された電話番号へ直接お電話して、アンケートへのご協力を依頼いたします。<br>
                                     ご協力可能でしたら、そのまま電話でのアンケートにご回答していただくようお願いいたします。
                                 </dd>
@@ -152,7 +154,7 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
                                 <dt class="survey-about-item__dt">
                                     アンケートの方法
                                 </dt>
-                                <dd class="survey-about-item__dd">
+                                <dd class="survey-about-item__dd--other">
                                     事前にその旨をメールあるいは電話にて通知し、ご協力をお願いすることがあります。
                                 </dd>
                             </dl>
@@ -174,7 +176,7 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
                         <p class="survey-reward__text">
                             アンケートにお答えいただくたびに、<span class="wbr">My GreenStamp</span>のポイント、またはその他の規定の謝礼を提供いたします。<br>
                             My GreenStampのポイントはお好きな商品やサービスと交換することができます。<br>
-                            詳しくは、<span class="survey-reward__link">My GreenStamp</span>のホームページをご覧ください。<br>
+                            詳しくは、<a href="<?= $my_green_stamp_url ?>" class="survey-reward__link" target="_blank">My GreenStamp</a>のホームページをご覧ください。<br>
                             なお、謝礼の発行履歴は、会員マイページへログインされますと、会員様ご自身で確認することができます。
                         </p>
                     </div>
@@ -186,7 +188,7 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
                             ※ My GreenStampのポイント残高は、My GreenStamp 会員ページへログインしてご確認できます。
                         </li>
                     </ul>
-                    <details class="survey-reward__mgs-accordion mgs-accordion">
+                    <details class="survey-reward__mgs-accordion mgs-accordion" open>
                         <summary class="mgs-accordion__summary">
                             <div class="mgs-accordion__summary-text">
                                 My GreenStampへの<span class="wbr">メンバー登録について案内</span>
@@ -194,6 +196,9 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
                             <span class="mgs-accordion__toggle"></span>
                         </summary>
                         <div class="mgs-accordion__wrap">
+                            <div class="mgs-accordion__img">
+                                <img src="<?php echo esc_url(get_theme_file_uri("/assets/images/survey_monitor/img_my-green-stamp02.png")); ?>" alt="Loyalty program">
+                            </div>
                             <p class="mgs-accordion__text">
                                 当社は、グリーンスタンプ株式会社の運営する「My GreenStamp（旧J-Point）」と提携しております。<br>
                                 会員の方が当社のアンケートにご協力いただいた場合、当社がお渡しする謝礼は、主に「My GreenStamp」のポイントとなっております。<br>
@@ -201,9 +206,6 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
                                 このため、当社が謝礼のポイントをお渡しできるようにするために、会員の方が「My GreenStamp」へメンバー登録されている必要があります。<br>
                                 アダムスモニターパネルへの入会の手続きにおいて、当社が入会希望者ご本人のための「My GreenStamp」への登録手続きを行うことについて、ご同意いただけない場合はアダムスモニターパネルへの入会登録はできません。
                             </p>
-                            <div class="mgs-accordion__img">
-                                <img src="<?php echo esc_url(get_theme_file_uri("/assets/images/survey_monitor/img_my-green-stamp02.png")); ?>" alt="Loyalty program">
-                            </div>
                         </div>
                         <p class="msg-accordion__text">
                             「My GreenStamp」へメンバー登録するために、当社はグリーンスタンプ株式会社に対して、下記のご登録者の登録情報を提供致します。<br>
@@ -322,13 +324,13 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
                                     <?php $is_open = ($i == 0) && ($j == 0); ?>
                                     <details class="faq-group__accordion" <?= $is_open ? ' open' : '' ?>>
                                         <summary class="faq-group__summary">
-                                            <div class="faq-group__wrap">
+                                            <div class="faq-group__wrap--q">
                                                 <p class="faq-group__q">Q.</p>
                                                 <p class="faq-group__q-text"><?= $faq_qa_item['question'] ?></p>
                                                 <span class="faq-group__q-toggle"></span>
                                             </div>
                                         </summary>
-                                        <div class="faq-group__wrap">
+                                        <div class="faq-group__wrap--a">
                                             <p class="faq-group__a">A.</p>
                                             <p class="faq-group__a-text"><?= $faq_qa_item['answer'] ?></p>
                                         </div>
