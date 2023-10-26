@@ -11,15 +11,17 @@ html {
 /*            Survey Monitor Intro             */
 /* =========================================== */
 .survey-monitor-intro--layout {
-    margin-bottom: g.rem(80);
+    margin-top: g.rem(calc(93 * 0.75));
+    margin-bottom: g.rem(80 * 0.75);
     @include g.mq(md) {
-        margin-bottom: g.rem(80 * 0.75);
+        margin-top: g.rem(93);
+        margin-bottom: g.rem(80);
     }
 }
 .survey-monitor-intro__title {
     margin-bottom: g.rem(calc(67 * 0.75));
     text-align: center;
-    font-size: g.rem(calc(35 * 0.75));
+    font-size: g.rem(calc(35 * 0.65));
     font-weight: bold;
     @include g.mq(md) {
         margin-bottom: g.rem(67);
@@ -48,6 +50,12 @@ html {
 /* =========================================== */
 /*                   Survey                    */
 /* =========================================== */
+.survey--layout {
+    margin-bottom: g.rem(calc(221 * 0.75));
+    @include g.mq(md) {
+        margin-bottom: g.rem(221);
+    }
+}
 .survey__title-box {
     display: flex;
     align-items: center;
@@ -75,6 +83,19 @@ html {
         margin-bottom: g.rem(126);
     }
 }
+.survey__faq {
+    margin-bottom: g.rem(calc(100 * 0.75));
+    @include g.mq(md) {
+        margin-bottom: g.rem(100);
+    }
+}
+.survey__monrle {
+    margin-bottom: g.rem(calc(100 * 0.75));
+    @include g.mq(md) {
+        margin-bottom: g.rem(100);
+    }
+}
+
 /* icon */
 .icon {
     display: flex;
@@ -331,6 +352,12 @@ details[open] .mgs-accordion__wrap {
     box-sizing: border-box;
     transform: translateY(-50%) rotate(135deg);
 }
+.survey-faq__groups {
+    margin-bottom: g.rem(calc(89 * 0.75));
+    @include g.mq(md) {
+        margin-bottom: g.rem(89);
+    }
+}
 .survey-faq__group:not(:last-child) {
     margin-bottom: g.rem(calc(59 * 0.75));
     @include g.mq(md) {
@@ -443,4 +470,77 @@ details[open] .faq-group__q-toggle::before {
 }
 details[open] .faq-group__q-toggle::after {
     opacity: 0;
+}
+
+/* =========================================== */
+/*            Survey Monitor Rule              */
+/* =========================================== */
+.survey-monrle__title {
+    margin-bottom: g.rem(calc(19 * 0.75));
+    @include g.mq(md) {
+        margin-bottom: g.rem(19);
+    }
+}
+
+/* =========================================== */
+/*               Survey Privacy                */
+/* =========================================== */
+.survey-privacy__scroll {
+    margin-bottom: g.rem(calc(92 * 0.75));
+    @include g.mq(md) {
+        margin-bottom: g.rem(92);
+    }
+}
+
+/* =========================================== */
+/*                   Common                    */
+/* =========================================== */
+.scroll {
+    height: g.rem(calc(319 * 0.75));
+    overflow-y: scroll;
+    border: 1px solid g.$color_border_3;
+    padding-top: g.rem(25);
+    padding-inline: g.rem(20);
+    @include g.mq(md) {
+        height: g.rem(319);
+        padding-block: g.rem(42);
+        padding-inline: g.rem(40) g.rem(30);
+    }
+}
+.scroll__content:not(:last-child) {
+    margin-bottom: g.rem(calc(30 * 0.75));
+    @include g.mq(md) {
+        margin-bottom: g.rem(30);
+    }
+}
+.scroll__content-heading {
+    margin-bottom: g.rem(calc(13 * 0.75));
+    font-size: g.rem(calc(20 * 0.75));
+    font-weight: 500;
+    line-height: calc(26/20);
+    @include g.mq(md) {
+        margin-bottom: g.rem(13);
+        font-size: g.rem(20);
+    }
+}
+.scroll__content-items {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+.scroll__content-item {
+    line-height: calc(32/16);
+    padding-left: 1em;
+    text-indent: -1em;
+}
+.scroll__content-text {
+    margin-bottom: g.rem(calc(34 * 0.75));
+    @include g.mq(md) {
+        margin-bottom: g.rem(34);
+    }
+}
+.scroll__content-text--last {
+    margin-top: g.rem(calc(25 * 0.75));
+    @include g.mq(md) {
+        margin-top: g.rem(25);
+    }
 }
