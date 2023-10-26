@@ -190,9 +190,9 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
                     </ul>
                     <details class="survey-reward__mgs-accordion mgs-accordion js-accordion">
                         <summary class="mgs-accordion__summary js-summary">
-                            <div class="mgs-accordion__summary-text">
+                            <span class="mgs-accordion__summary-text">
                                 My GreenStampへの<span class="wbr">メンバー登録について案内</span>
-                            </div>
+                            </span>
                             <span class="mgs-accordion__toggle"></span>
                         </summary>
                         <div class="mgs-accordion__content js-content">
@@ -326,11 +326,11 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
                                     <?php $is_open = ($i == 0) && ($j == 0); ?>
                                     <details class="faq-group__accordion js-accordion" <?= $is_open ? ' open' : '' ?>>
                                         <summary class="faq-group__summary js-summary">
-                                            <div class="faq-group__wrap--q">
-                                                <p class="faq-group__q">Q.</p>
-                                                <p class="faq-group__q-text"><?= $faq_qa_item['question'] ?></p>
+                                            <span class="faq-group__wrap--q">
+                                                <span class="faq-group__q">Q.</span>
+                                                <span class="faq-group__q-text"><?= $faq_qa_item['question'] ?></span>
                                                 <span class="faq-group__q-toggle"></span>
-                                            </div>
+                                            </span>
                                         </summary>
                                         <div class="faq-group__wrap--a js-content">
                                             <p class="faq-group__a">A.</p>
