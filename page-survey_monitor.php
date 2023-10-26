@@ -172,7 +172,7 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
                             <img src="<?php echo esc_url(get_theme_file_uri("/assets/images/survey_monitor/img_my-green-stamp01.jpg")); ?>" alt="マイ グリーンスタンプ">
                         </div>
                         <p class="survey-reward__text">
-                            アンケートにお答えいただくたびに、My GreenStampのポイント、またはその他の規定の謝礼を提供いたします。<br>
+                            アンケートにお答えいただくたびに、<span class="wbr">My GreenStamp</span>のポイント、またはその他の規定の謝礼を提供いたします。<br>
                             My GreenStampのポイントはお好きな商品やサービスと交換することができます。<br>
                             詳しくは、<span class="survey-reward__link">My GreenStamp</span>のホームページをご覧ください。<br>
                             なお、謝礼の発行履歴は、会員マイページへログインされますと、会員様ご自身で確認することができます。
@@ -188,7 +188,10 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
                     </ul>
                     <details class="survey-reward__mgs-accordion mgs-accordion">
                         <summary class="mgs-accordion__summary">
-                            My GreenStampへのメンバー登録について案内
+                            <div class="mgs-accordion__summary-text">
+                                My GreenStampへの<span class="wbr">メンバー登録について案内</span>
+                            </div>
+                            <span class="mgs-accordion__toggle"></span>
                         </summary>
                         <div class="mgs-accordion__wrap">
                             <p class="mgs-accordion__text">
