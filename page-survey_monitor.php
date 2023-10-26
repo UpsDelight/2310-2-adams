@@ -188,33 +188,35 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
                             ※ My GreenStampのポイント残高は、My GreenStamp 会員ページへログインしてご確認できます。
                         </li>
                     </ul>
-                    <details class="survey-reward__mgs-accordion mgs-accordion" open>
-                        <summary class="mgs-accordion__summary">
+                    <details class="survey-reward__mgs-accordion mgs-accordion js-accordion">
+                        <summary class="mgs-accordion__summary js-summary">
                             <div class="mgs-accordion__summary-text">
                                 My GreenStampへの<span class="wbr">メンバー登録について案内</span>
                             </div>
                             <span class="mgs-accordion__toggle"></span>
                         </summary>
-                        <div class="mgs-accordion__wrap">
-                            <div class="mgs-accordion__img">
-                                <img src="<?php echo esc_url(get_theme_file_uri("/assets/images/survey_monitor/img_my-green-stamp02.png")); ?>" alt="Loyalty program">
+                        <div class="mgs-accordion__content js-content">
+                            <div class="mgs-accordion__wrap">
+                                <div class="mgs-accordion__img">
+                                    <img src="<?php echo esc_url(get_theme_file_uri("/assets/images/survey_monitor/img_my-green-stamp02.png")); ?>" alt="Loyalty program">
+                                </div>
+                                <p class="mgs-accordion__text">
+                                    当社は、グリーンスタンプ株式会社の運営する「My GreenStamp（旧J-Point）」と提携しております。<br>
+                                    会員の方が当社のアンケートにご協力いただいた場合、当社がお渡しする謝礼は、主に「My GreenStamp」のポイントとなっております。<br>
+                                    <br>
+                                    このため、当社が謝礼のポイントをお渡しできるようにするために、会員の方が「My GreenStamp」へメンバー登録されている必要があります。<br>
+                                    アダムスモニターパネルへの入会の手続きにおいて、当社が入会希望者ご本人のための「My GreenStamp」への登録手続きを行うことについて、ご同意いただけない場合はアダムスモニターパネルへの入会登録はできません。
+                                </p>
                             </div>
-                            <p class="mgs-accordion__text">
-                                当社は、グリーンスタンプ株式会社の運営する「My GreenStamp（旧J-Point）」と提携しております。<br>
-                                会員の方が当社のアンケートにご協力いただいた場合、当社がお渡しする謝礼は、主に「My GreenStamp」のポイントとなっております。<br>
+                            <p class="msg-accordion__text">
+                                「My GreenStamp」へメンバー登録するために、当社はグリーンスタンプ株式会社に対して、下記のご登録者の登録情報を提供致します。<br>
                                 <br>
-                                このため、当社が謝礼のポイントをお渡しできるようにするために、会員の方が「My GreenStamp」へメンバー登録されている必要があります。<br>
-                                アダムスモニターパネルへの入会の手続きにおいて、当社が入会希望者ご本人のための「My GreenStamp」への登録手続きを行うことについて、ご同意いただけない場合はアダムスモニターパネルへの入会登録はできません。
+                                ①住所　②氏名　③生年月日　④連絡先電話番号　⑤Eメールアドレス　⑥My GreenStamp ID　⑦My GreenStampパスワード<br>
+                                <br>
+                                なお、「My GreenStamp」へのメンバー登録によって、ご登録者に金銭的負担が発生することはありません。<br>
+                                また、後日「My GreenStamp」を退会されますと、謝礼のポイントの発行ができなくなりますので、そのような場合はアダムスモニターパネルから退会させていただくことがあります。
                             </p>
                         </div>
-                        <p class="msg-accordion__text">
-                            「My GreenStamp」へメンバー登録するために、当社はグリーンスタンプ株式会社に対して、下記のご登録者の登録情報を提供致します。<br>
-                            <br>
-                            ①住所　②氏名　③生年月日　④連絡先電話番号　⑤Eメールアドレス　⑥My GreenStamp ID　⑦My GreenStampパスワード<br>
-                            <br>
-                            なお、「My GreenStamp」へのメンバー登録によって、ご登録者に金銭的負担が発生することはありません。<br>
-                            また、後日「My GreenStamp」を退会されますと、謝礼のポイントの発行ができなくなりますので、そのような場合はアダムスモニターパネルから退会させていただくことがあります。
-                        </p>
                     </details>
                     <div class="survey-reward__btn c_btn_link ani fadein">
                         <a href="<?= $login_url ?>" class="link" target="_blank">
@@ -322,15 +324,15 @@ $my_green_stamp_url = 'https://www.mygreenstamp.jp/mgs/member/index';
                                 </h4>
                                 <?php foreach ($faq_group['faq_qa_items'] as $j => $faq_qa_item) : ?>
                                     <?php $is_open = ($i == 0) && ($j == 0); ?>
-                                    <details class="faq-group__accordion" <?= $is_open ? ' open' : '' ?>>
-                                        <summary class="faq-group__summary">
+                                    <details class="faq-group__accordion js-accordion" <?= $is_open ? ' open' : '' ?>>
+                                        <summary class="faq-group__summary js-summary">
                                             <div class="faq-group__wrap--q">
                                                 <p class="faq-group__q">Q.</p>
                                                 <p class="faq-group__q-text"><?= $faq_qa_item['question'] ?></p>
                                                 <span class="faq-group__q-toggle"></span>
                                             </div>
                                         </summary>
-                                        <div class="faq-group__wrap--a">
+                                        <div class="faq-group__wrap--a js-content">
                                             <p class="faq-group__a">A.</p>
                                             <p class="faq-group__a-text"><?= $faq_qa_item['answer'] ?></p>
                                         </div>

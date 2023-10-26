@@ -398,13 +398,10 @@ html {
 /* mgs-accordion */
 .mgs-accordion {
   background-color: #EFF2EC;
-  padding: 1.25rem;
   line-height: 1.6;
 }
 @media screen and (min-width: 768px) {
   .mgs-accordion {
-    padding-block: 2.1875rem 2.75rem;
-    padding-inline: 2.6875rem 2.4375rem;
     line-height: 2;
   }
 }
@@ -416,11 +413,14 @@ html {
   display: grid;
   grid-template-columns: 1fr 1.4375rem;
   align-items: center;
+  padding: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .mgs-accordion__summary {
     cursor: pointer;
     font-size: 1.5625rem;
+    padding-block: 2.1875rem 2.75rem;
+    padding-inline: 2.6875rem 2.4375rem;
   }
 }
 
@@ -463,12 +463,23 @@ details[open] .mgs-accordion__toggle::after {
   opacity: 0;
 }
 
+.mgs-accordion__content {
+  padding: 1.25rem 1.25rem 1.875rem;
+}
+@media screen and (min-width: 768px) {
+  .mgs-accordion__content {
+    padding-top: 0;
+    padding-bottom: 2.75rem;
+    padding-inline: 2.6875rem 2.4375rem;
+  }
+}
+
 .mgs-accordion__wrap {
-  margin-block: 0.796875rem;
+  margin-bottom: 0.796875rem;
 }
 @media screen and (min-width: 768px) {
   .mgs-accordion__wrap {
-    margin-block: 1.0625rem;
+    margin-bottom: 1.0625rem;
   }
 }
 
@@ -480,7 +491,7 @@ details[open] .mgs-accordion__toggle::after {
 }
 @media screen and (min-width: 768px) {
   .mgs-accordion__img {
-    margin: -0.3125rem -1.75rem 0.625rem 0.3125rem;
+    margin: 0 -1.75rem 0.625rem 0.3125rem;
     width: 29.875rem;
     float: right;
   }
@@ -609,37 +620,39 @@ details[open] .mgs-accordion__toggle::after {
 
 .faq-group__wrap--q {
   display: grid;
-  gap: 1.375rem;
+  gap: 1.03125rem;
   grid-template-columns: max-content 1fr max-content;
   align-items: center;
-  padding: 0.703125rem 0.9375rem;
+  padding: 1.375rem 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .faq-group__wrap--q {
+    gap: 1.375rem;
     padding-inline: 3.1875rem 1.875rem;
   }
 }
 @media screen and (min-width: 768px) {
   .faq-group__wrap--q {
-    padding-block: 0.9375rem 0.75rem;
+    padding-block: 0.9375rem 1.125rem;
   }
 }
 
 .faq-group__wrap--a {
   display: grid;
-  gap: 1.375rem;
+  gap: 1.03125rem;
   grid-template-columns: max-content 1fr max-content;
   align-items: center;
-  padding: 0.703125rem 0.9375rem;
+  padding: 1.375rem 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .faq-group__wrap--a {
+    gap: 1.375rem;
     padding-inline: 3.1875rem 1.875rem;
   }
 }
 @media screen and (min-width: 768px) {
   .faq-group__wrap--a {
-    padding-block: 1rem 0.9375rem;
+    padding-block: 1rem 1.25rem;
   }
 }
 

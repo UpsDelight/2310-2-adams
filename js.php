@@ -81,3 +81,8 @@ if (is_404()) {
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/faq.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/popup.js"></script>
 <?php endif; ?>
+
+<?php if (is_page('survey_monitor')) : ?>
+    <!--調査モニターのご案内-->
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/survey-monitor/index.js"></script>
+<?php endif; ?>

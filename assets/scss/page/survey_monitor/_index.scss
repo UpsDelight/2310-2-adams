@@ -300,11 +300,8 @@ html {
 /* mgs-accordion */
 .mgs-accordion {
     background-color: g.$color_bg2;
-    padding: g.rem(20);
     line-height: 1.6;
     @include g.mq(md) {
-        padding-block: g.rem(35) g.rem(44);
-        padding-inline: g.rem(43) g.rem(39);
         line-height: 2;
     }
 }
@@ -315,9 +312,12 @@ html {
     display: grid;
     grid-template-columns: 1fr g.rem(23);
     align-items: center;
+    padding: g.rem(20);
     @include g.mq(md) {
         cursor: pointer;
         font-size: g.rem(25);
+        padding-block: g.rem(35) g.rem(44);
+        padding-inline: g.rem(43) g.rem(39);
     }
 }
 .mgs-accordion__summary::-webkit-details-marker {
@@ -353,11 +353,18 @@ details[open] .mgs-accordion__toggle::before {
 details[open] .mgs-accordion__toggle::after {
     opacity: 0;
 }
-.mgs-accordion__wrap {
-    margin-block: g.rem(calc(17 * 0.75));
+.mgs-accordion__content {
+    padding: g.rem(20) g.rem(20) g.rem(30);
     @include g.mq(md) {
-        // display: flex;
-        margin-block: g.rem(17);
+        padding-top: 0;
+        padding-bottom: g.rem(44);
+        padding-inline: g.rem(43) g.rem(39);
+    }
+}
+.mgs-accordion__wrap {
+    margin-bottom: g.rem(calc(17 * 0.75));
+    @include g.mq(md) {
+        margin-bottom: g.rem(17);
     }
 }
 .mgs-accordion__img {
@@ -365,7 +372,7 @@ details[open] .mgs-accordion__toggle::after {
     width: 100%;
     height: max-content;
     @include g.mq(md) {
-        margin: g.rem(-5) g.rem(-28) g.rem(10) g.rem(5);
+        margin: 0 g.rem(-28) g.rem(10) g.rem(5);
         width: g.rem(478);
         float: right;
     }
@@ -470,24 +477,25 @@ details[open] .mgs-accordion__toggle::after {
 }
 @mixin faq-group__wrap {
     display: grid;
-    gap: g.rem(22);
+    gap: g.rem(calc(22 * 0.75));
     grid-template-columns: max-content 1fr max-content;
     align-items: center;
-    padding: g.rem(calc(15 * 0.75)) g.rem(calc(20 * 0.75));
+    padding: g.rem(22) g.rem(20);
     @include g.mq(md) {
+        gap: g.rem(22);
         padding-inline: g.rem(51) g.rem(30);
     }
 }
 .faq-group__wrap--q {
     @include faq-group__wrap;
     @include g.mq(md) {
-        padding-block: g.rem(15) g.rem(12);
+        padding-block: g.rem(15) g.rem(18);
     }
 }
 .faq-group__wrap--a {
     @include faq-group__wrap;
     @include g.mq(md) {
-        padding-block: g.rem(16) g.rem(15);
+        padding-block: g.rem(16) g.rem(20);
     }
 }
 @mixin faq-group__qa {
