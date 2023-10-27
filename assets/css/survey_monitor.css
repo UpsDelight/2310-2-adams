@@ -11,10 +11,6 @@ global > content-width
 global > font
 ------------------------------
 */
-html {
-  scroll-behavior: smooth;
-}
-
 .wbr {
   display: inline-block;
 }
@@ -816,6 +812,26 @@ details[open] .faq-group__q-toggle::after {
   line-height: 2;
   padding-left: 1.5em;
   text-indent: -1em;
+}
+
+.scroll__content-tel {
+  color: #00ADC6;
+  text-decoration: underline;
+  text-underline-offset: 0.125rem;
+}
+@media screen and (min-width: 768px) {
+  .scroll__content-tel {
+    color: #44474E;
+    text-underline-offset: unset;
+    text-decoration: none;
+    pointer-events: none;
+  }
+}
+
+.scroll__content-link {
+  color: #00ADC6;
+  text-decoration: underline;
+  text-underline-offset: 0.125rem;
 }
 
 .scroll__content-text {

@@ -1,8 +1,5 @@
 @use "../../global" as g;
 
-html {
-    scroll-behavior: smooth;
-}
 .wbr {
     display: inline-block;
 }
@@ -623,6 +620,22 @@ details[open] .faq-group__q-toggle::after {
     line-height: calc(32/16);
     padding-left: 1.5em;
     text-indent: -1em;
+}
+.scroll__content-tel {
+    color: g.$color_brand_1;
+    text-decoration: underline;
+    text-underline-offset: g.rem(2);
+    @include g.mq("md") {
+        color: g.$color_basic_text;
+        text-underline-offset: unset;
+        text-decoration: none;
+        pointer-events: none;
+    }
+}
+.scroll__content-link {
+    color: g.$color_brand_1;
+    text-decoration: underline;
+    text-underline-offset: g.rem(2);
 }
 .scroll__content-text {
     margin-bottom: g.rem(calc(27 * 0.75));
